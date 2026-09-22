@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="16" fill="#354555" />
+  <text
+    x="30"
+    y="43"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="800"
+    font-size="30"
+    letter-spacing="-1"
+    fill="#efefe8"
+  >IA</text>
+  <rect x="18" y="47" width="14" height="3" rx="1.5" fill="#57aba4" />
+  <circle cx="49" cy="15" r="5" fill="#ff595a" />
+</svg>
