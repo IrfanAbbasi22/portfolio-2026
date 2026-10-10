@@ -24,7 +24,7 @@ export default function AboutPage() {
         <SkillsMatrix />
         <ExperienceTimeline />
         <Academics />
-        <CTABanner />
+        {/* <CTABanner /> */}
       </div>
     </main>
   );

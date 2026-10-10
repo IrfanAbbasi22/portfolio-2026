@@ -3,7 +3,12 @@
 import { useCallback, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CurvedArc from "./CurvedArc";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 /**
  * Reproduces dennissnellenberg.com's Barba.js page-transition choreography
@@ -78,6 +83,16 @@ export default function PageTransitionProvider() {
       gsap.set(document.querySelectorAll<HTMLElement>("main .once-in"), {
         clearProps: "transform",
       });
+
+      // Components that live in the root layout (Footer, with its scroll-scrubbed
+      // reveal animation) never unmount between pages, so their ScrollTriggers keep
+      // whatever start/end pixel positions they calculated on first mount — against
+      // whatever page happened to load first. On a page with very different content
+      // height, those positions are wrong, which reads as both "the animation doesn't
+      // work" and a footer stuck mid-tween (a lingering offset that eats into its own
+      // bottom spacing). Refreshing after the new page has settled recalculates every
+      // active trigger against the page that's actually on screen now.
+      requestAnimationFrame(() => ScrollTrigger.refresh());
     };
 
     try {

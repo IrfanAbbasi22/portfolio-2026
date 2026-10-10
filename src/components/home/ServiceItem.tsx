@@ -13,7 +13,7 @@ function MapPin({ label }: { label: string }) {
         />
         <circle cx="20" cy="19" r="10" className="fill-cream" />
       </svg>
-      <span className="absolute left-0 top-[9px] w-full text-center font-mono text-[11px] font-bold leading-none text-navy">
+      <span className="absolute left-0 top-3.5 w-full text-center font-mono text-[11px] font-bold leading-none text-navy">
         {label}
       </span>
     </div>

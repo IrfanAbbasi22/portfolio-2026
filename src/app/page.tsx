@@ -23,7 +23,7 @@ export default function Home() {
       <SkillsExperience />
       <ExperienceTimeline eyebrow="04 / TRACK RECORD" />
       <Academics eyebrow="05 / PEDAGOGY" />
-      <ContactCTA />
+      {/* <ContactCTA /> */}
     </main>
   );
 }
