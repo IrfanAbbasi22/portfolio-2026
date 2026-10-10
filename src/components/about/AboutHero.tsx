@@ -1,6 +1,6 @@
 export default function AboutHero() {
   return (
-    <section className="w-full px-who-margin md:px-who-margin-desktop pt-16 md:pt-24 pb-who-space-xl md:pb-who-space-2xl">
+    <section className="w-full px-who-margin md:px-who-margin-desktop pt-20 md:pt-28 pb-who-space-xl md:pb-who-space-2xl">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-y-who-space-xl md:gap-who-gutter-desktop">
         {/* Left Editorial Axis */}
         <div className="md:col-span-3 flex flex-col justify-between">
@@ -28,23 +28,21 @@ export default function AboutHero() {
         {/* Right Dominant Display Column */}
         <div className="md:col-span-9 flex flex-col">
           <h1 className="once-in will-change-transform font-who-headline-display text-who-headline-display-mobile md:text-who-headline-display text-navy uppercase tracking-tight leading-[0.92]">
-            A FRONTEND SYSTEMS THINKER, NOT JUST A UI IMPLEMENTER.
+            A FRONTEND DEVELOPER WHO THINKS BEYOND THE SCREEN.
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-who-space-lg mt-who-space-xl items-start">
             <div className="lg:col-span-8">
               <p className="font-who-body-lg text-who-body-lg text-navy leading-relaxed">
-                I view frontend development as the intersection of aesthetic
-                precision, robust systems engineering, and modern
-                intelligence. Over 5 years, I&rsquo;ve bridged design systems
-                and production code to build platforms that scale
-                effortlessly.
+                I see frontend development as where good design, solid
+                engineering, and modern AI meet. Over the past 5+ years,
+                I&rsquo;ve connected design systems with production code to
+                build platforms that scale smoothly.
               </p>
               <p className="font-who-body-md text-who-body-md text-navy/60 mt-who-space-md">
-                From building headless multi-tenant storefronts to embedding
-                conversational voice intelligence via ElevenLabs and OpenAI,
-                my work is rooted in intentional architecture: strict
-                modularity, sub-millisecond tactile responsiveness, and
-                resilient client-side pipelines.
+                From building online stores for multiple clients to adding
+                AI voice features with ElevenLabs and OpenAI, my work is
+                built on clear structure: modular code, fast and responsive
+                interfaces, and systems that hold up under real use.
               </p>
             </div>
             <div className="lg:col-span-4 bg-white rounded-xl p-who-space-md flex flex-col gap-who-space-sm shadow-sm">

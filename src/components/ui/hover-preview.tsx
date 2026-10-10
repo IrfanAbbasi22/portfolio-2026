@@ -83,7 +83,7 @@ export function HoverPreviewCard({
         <div className="px-1.5 pt-3 font-condensed text-base uppercase tracking-wide text-cream">
           {item.title}
         </div>
-        <div className="px-1.5 pb-2 font-mono text-[11px] text-cream/50">{item.subtitle}</div>
+        <div className="px-1.5 pb-2 font-mono text-xs text-cream/50">{item.subtitle}</div>
       </div>
     </div>
   );

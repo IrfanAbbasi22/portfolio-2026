@@ -16,7 +16,7 @@ export default function SkillsExperience() {
           <div className="flex items-center gap-who-space-sm mb-who-space-xs">
             <span className="w-6 h-px bg-coral" />
             <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-[0.25em] text-navy font-bold">
-              03 / CAPABILITIES
+              04 / CAPABILITIES
             </span>
           </div>
           <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-navy uppercase tracking-tight">

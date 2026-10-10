@@ -2,6 +2,7 @@ import Hero from "@/components/home/Hero";
 import NameMarquee from "@/components/home/NameMarquee";
 import SelectedWorks from "@/components/home/SelectedWorks";
 import WhoIAm from "@/components/home/WhoIAm";
+import CareerJourney from "@/components/home/CareerJourney";
 import WhatIDo from "@/components/home/WhatIDo";
 import StrategicCoffee from "@/components/home/StrategicCoffee";
 import SkillsExperience from "@/components/home/SkillsExperience";
@@ -15,13 +16,14 @@ export default function Home() {
   return (
     <main className="w-full overflow-x-clip">
       <Hero />
-      <NameMarquee />
+      {/* <NameMarquee /> */}
       <SelectedWorks />
       <WhoIAm />
+      <CareerJourney />
       <WhatIDo />
       {/* <StrategicCoffee /> */}
       <SkillsExperience />
-      <ExperienceTimeline eyebrow="04 / TRACK RECORD" />
+      <ExperienceTimeline eyebrow="05 / TRACK RECORD" />
       {/* <Academics eyebrow="05 / PEDAGOGY" /> */}
       {/* <ContactCTA /> */}
     </main>

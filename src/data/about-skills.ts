@@ -20,7 +20,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Frontend Core",
     badge: "Primary",
     description:
-      "High-performance web architecture, type-safe interfaces, and kinetic micro-interactions built for scale.",
+      "Fast, reliable interfaces with smooth animations and type-safe code that holds up as a product grows.",
     variant: "light",
     tags: [
       { label: "React" },
@@ -38,7 +38,7 @@ export const skillCategories: SkillCategory[] = [
     title: "AI & Automation",
     badge: "Specialized",
     description:
-      "Agentic multi-agent systems, multimodal voice endpoints, and enterprise-grade webhook synchronization.",
+      "AI voice agents, automated workflows, and reliable data syncing between business tools.",
     variant: "dark",
     tags: [
       { label: "ElevenLabs Voice AI", variant: "inverted" },
@@ -53,7 +53,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Backend & APIs",
     badge: "Integration",
     description:
-      "Robust data contracts, asynchronous handler engines, serverless handlers, and performant query layers.",
+      "Reliable APIs, serverless functions, and fast, well-structured data queries.",
     variant: "light",
     tags: [
       { label: "Node.js" },
@@ -68,7 +68,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Platforms & CMS",
     badge: "Commerce",
     description:
-      "Decoupled storefronts and content modeling delivering uncompromising conversion rates and fast caching.",
+      "Fast, flexible online stores and content systems built to turn visitors into customers.",
     variant: "light",
     tags: [
       { label: "Headless Shopify" },
@@ -83,7 +83,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Design & Systems",
     badge: "Craft",
     description:
-      "From Figma component architecture into semantic DOM trees, adhering strictly to WCAG 2.1 AA accessibility guidelines.",
+      "Turning Figma designs into clean, accessible code that meets WCAG 2.1 AA standards.",
     variant: "light",
     tags: [
       { label: "Figma → Code" },
@@ -98,7 +98,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Tools & DevOps",
     badge: "CI / CD",
     description:
-      "Streamlined pipelines, edge compute orchestration, branch previews, and modern bundler optimization.",
+      "Automated deployments, fast builds, and a preview link for every change before it goes live.",
     variant: "light",
     tags: [
       { label: "Git / GitHub" },

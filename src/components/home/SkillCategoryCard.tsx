@@ -10,12 +10,12 @@ export default function SkillCategoryCard({
       <div>
         <div className="flex items-center justify-between mb-3">
           <span
-            className={`font-mono text-[10px] tracking-widest uppercase px-2.5 py-1 rounded-full font-bold ${category.badgeClassName}`}
+            className={`font-mono text-xs tracking-widest uppercase px-2.5 py-1 rounded-full font-bold ${category.badgeClassName}`}
           >
             {category.badgeLabel}
           </span>
           <span
-            className={`text-[11px] font-mono font-bold ${category.metricClassName}`}
+            className={`text-xs font-mono font-bold ${category.metricClassName}`}
           >
             {category.metricLabel}
           </span>
@@ -31,7 +31,7 @@ export default function SkillCategoryCard({
         {category.tags.map((tag) => (
           <span
             key={tag}
-            className="font-mono text-[11px] px-2.5 py-1 rounded bg-cream text-navy font-semibold border border-navy/10"
+            className="font-mono text-xs px-2.5 py-1 rounded bg-cream text-navy font-semibold border border-navy/10"
           >
             {tag}
           </span>

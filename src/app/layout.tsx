@@ -10,7 +10,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mohd Irfan — Senior Frontend Engineer",
   description:
-    "Portfolio of Mohd Irfan, a senior frontend engineer specializing in resilient client runtimes, headless commerce and AI-powered interfaces.",
+    "Portfolio of Mohd Irfan, a senior frontend developer specializing in reliable web apps, online stores, and AI-powered interfaces.",
 };
 
 export default function RootLayout({

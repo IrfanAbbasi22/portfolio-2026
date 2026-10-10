@@ -128,7 +128,7 @@ export default function NavOverlay({ isOpen, onClose }: NavOverlayProps) {
                           <span className={`font-condensed text-4xl sm:text-5xl tracking-tight text-cream uppercase leading-none ${isActive ? "underline text-underling" : ""}`}>
                             {item.label}
                           </span>
-                        <span className="hidden sm:inline font-mono text-[10px] uppercase tracking-widest text-cream/40 group-hover:text-white transition-colors">
+                        <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-cream/40 group-hover:text-white transition-colors">
                           {item.meta}
                         </span>
                       </MagneticLink>
@@ -149,7 +149,7 @@ export default function NavOverlay({ isOpen, onClose }: NavOverlayProps) {
                   <li key={social.href}>
                     <MagneticLink
                       strength={18}
-                      className="inline-block text-[11px] font-bold uppercase tracking-widest text-cream/70 hover:text-coral transition-colors"
+                      className="inline-block text-xs font-bold uppercase tracking-widest text-cream/70 hover:text-coral transition-colors"
                       href={social.href}
                       rel="noopener noreferrer"
                       target="_blank"

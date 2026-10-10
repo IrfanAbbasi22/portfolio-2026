@@ -38,7 +38,7 @@ export default function StrategicCoffee() {
             <h4 className="font-syne text-4xl sm:text-5xl font-bold text-coral tracking-tight lowercase">
               strategic <span className="text-navy font-extrabold">coffee</span>
             </h4>
-            <p className="font-mono text-[11px] uppercase tracking-widest text-navy/70 mt-1 font-semibold">
+            <p className="font-mono text-xs uppercase tracking-widest text-navy/70 mt-1 font-semibold">
               ONE SYSTEM, ONE ROADMAP, COMPLETE CLARITY.
             </p>
           </div>

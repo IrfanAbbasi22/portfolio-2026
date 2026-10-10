@@ -25,7 +25,7 @@ export const projects: Project[] = [
     footerLabel: "CONVERSATIONAL ENGINE",
     mockup: (
       <div className="w-full h-56 bg-navy rounded-xl flex flex-col justify-between p-5 relative overflow-hidden group">
-        <div className="flex items-center justify-between text-white/50 text-[10px] font-mono">
+        <div className="flex items-center justify-between text-white/50 text-xs font-mono">
           <span>VOICE SESSION AGENT</span>
           <span className="flex items-center gap-1 text-teal font-bold">
             <span className="w-1.5 h-1.5 rounded-full bg-teal animate-ping"></span>
@@ -37,7 +37,7 @@ export const projects: Project[] = [
             <span className="text-coral">&gt;</span> fundassist
             <span className="text-teal">.ai</span>
           </div>
-          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/10 text-white/80">
+          <span className="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white/80">
             LIVE AGENT
           </span>
         </div>
@@ -69,12 +69,12 @@ export const projects: Project[] = [
               IVF
             </span>
           </div>
-          <span className="text-[10px] font-mono bg-coral text-white px-2 py-0.5 rounded font-bold uppercase">
+          <span className="text-xs font-mono bg-coral text-white px-2 py-0.5 rounded font-bold uppercase">
             -80% SPAM
           </span>
         </div>
         <div className="border-t border-navy/20 pt-3">
-          <p className="text-[11px] text-navy/80 leading-snug font-medium">
+          <p className="text-xs text-navy/80 leading-snug font-medium">
             Server Actions &amp; LeadSquared synchronization infrastructure.
           </p>
         </div>
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     offsetClassName: "lg:mt-4",
     mockup: (
       <div className="w-full h-56 bg-coral rounded-xl flex flex-col justify-between p-5 relative overflow-hidden">
-        <div className="flex items-center justify-between text-white font-mono text-[10px]">
+        <div className="flex items-center justify-between text-white font-mono text-xs">
           <span>TIMELINE ORCHESTRATION</span>
           <span className="font-bold">60 FPS</span>
         </div>
@@ -167,7 +167,7 @@ export const projects: Project[] = [
     mockup: (
       <div className="w-full h-56 bg-white rounded-xl flex flex-col justify-between overflow-hidden relative border border-navy/10">
         <div className="w-full h-16 bg-navy p-3 flex justify-between items-center text-white">
-          <span className="font-mono text-[10px] tracking-widest uppercase">
+          <span className="font-mono text-xs tracking-widest uppercase">
             HEADLESS STOREFRONT
           </span>
           <div className="w-5 h-5 rounded-full border border-white/50 flex items-center justify-center text-[9px]">
@@ -197,7 +197,7 @@ export const projects: Project[] = [
     offsetClassName: "lg:mt-6",
     mockup: (
       <div className="w-full h-56 bg-navy rounded-xl flex flex-col justify-between overflow-hidden relative p-5">
-        <div className="flex items-center justify-between text-white/50 text-[10px] font-mono">
+        <div className="flex items-center justify-between text-white/50 text-xs font-mono">
           <span>CROSS-SECTOR DELIVERY</span>
           <span className="text-teal font-bold">6 PROJECTS</span>
         </div>

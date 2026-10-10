@@ -11,7 +11,7 @@ export default function SelectedWorks() {
       <div className="w-full bg-navy rounded-[2rem] md:rounded-home-4xl lg:rounded-home-5xl pt-16 pb-20 px-4 sm:px-8 md:px-12 lg:px-16 shadow-2xl relative overflow-hidden">
         {/* Header: Centered "SELECTED WORKS" in Ultra-Tall Condensed Type */}
         <div className="text-center mb-16 md:mb-24 flex flex-col items-center">
-          <span className="text-[11px] md:text-[12px] font-mono tracking-[0.3em] uppercase text-white/60 font-semibold mb-2">
+          <span className="text-xs md:text-[12px] font-mono tracking-[0.3em] uppercase text-white/60 font-semibold mb-2">
             S E L E C T E D
           </span>
           <h2 className="font-condensed text-[64px] sm:text-[92px] md:text-[130px] leading-[0.88] uppercase text-white tracking-wide">

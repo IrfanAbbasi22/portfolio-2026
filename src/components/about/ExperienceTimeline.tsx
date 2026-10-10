@@ -1,14 +1,14 @@
 import { StackCard, StackCards } from "@/components/ui/StackCards";
 
 const currentRoleHighlights = [
-  "Spearheaded the frontend architecture for enterprise clients, shipping high-conversion Next.js web applications, design systems, and AI-integrated execution pipelines.",
-  "Engineered custom API orchestrations and validation layers, cutting form spam by 80% and dramatically scaling throughput for qualified lead funnels.",
-  "Built modular multi-tenant frontends consuming headless CMS endpoints with automated static generation and edge cache invalidation.",
+  "Led frontend development for enterprise clients, building Next.js web applications, design systems, and AI-powered workflows that drive results.",
+  "Built custom API connections and form validation that cut spam submissions by 80% and helped more qualified leads get through.",
+  "Built reusable frontends for multiple client sites, pulling content from a shared CMS with automated builds and fast page caching.",
 ];
 
 const foundationalRoleHighlights = [
-  "Developed responsive, accessible web portals and custom e-commerce themes for diverse international business clientele across fashion, tech, and services.",
-  "Systematically audited and optimized Core Web Vitals (LCP, CLS, FID) across 20+ commercial client websites, boosting average Google PageSpeed scores above 90.",
+  "Built responsive, accessible websites and custom online stores for clients across fashion, tech, and services.",
+  "Tested and improved site speed and performance (Core Web Vitals) across 20+ client websites, pushing average Google PageSpeed scores above 90.",
 ];
 
 export default function ExperienceTimeline({
@@ -17,7 +17,10 @@ export default function ExperienceTimeline({
   eyebrow?: string;
 }) {
   return (
-    <section className="w-full px-who-margin md:px-who-margin-desktop py-who-space-2xl">
+    <section
+      id="experience"
+      className="w-full px-who-margin md:px-who-margin-desktop py-who-space-2xl"
+    >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-who-gutter-desktop">
         {/* Left Anchor */}
         <div className="md:col-span-3 md:sticky md:top-24 md:self-start">
@@ -31,8 +34,8 @@ export default function ExperienceTimeline({
             EXPERIENCE
           </h2>
           <p className="font-who-body-sm text-who-body-sm text-navy/60 mt-who-space-sm">
-            A progression of architectural ownership, leadership accolades,
-            and tangible metric improvements.
+            A track record of growing ownership, recognition, and real,
+            measurable results.
           </p>
           {/* Metric Callout Widget */}
           <div className="bg-white rounded-xl p-who-space-md mt-who-space-xl hidden md:flex flex-col gap-who-space-xs">
@@ -43,8 +46,8 @@ export default function ExperienceTimeline({
               -80%
             </span>
             <p className="font-who-body-sm text-who-body-sm text-navy/60">
-              Reduction in enterprise intake spam via bespoke edge
-              verification logic.
+              Fewer spam submissions on client contact forms, after adding
+              custom validation checks.
             </p>
           </div>
         </div>

@@ -54,7 +54,7 @@ function FadeHoverLink({
   ...props
 }: Omit<Parameters<typeof HoverLink>[0], "className">) {
   return (
-    <HoverLink {...props} className="fade-word text-coral font-semibold">
+    <HoverLink {...props} className="fade-word text-[#A7FFF0] font-semibold">
       {children}
     </HoverLink>
   );
@@ -178,7 +178,7 @@ export default function WhoIAm() {
             <div className="mt-12 md:mt-16">
               <MagneticLink
                 strength={18}
-                className="font-mono text-sm md:text-base font-bold uppercase tracking-[0.2em] text-white/90 hover:text-navy transition-colors inline-block"
+                className="font-mono text-sm md:text-base font-bold uppercase tracking-[0.2em] text-white hover:text-navy transition-colors inline-block"
                 href="/about"
               >
                 (WHO I AM)

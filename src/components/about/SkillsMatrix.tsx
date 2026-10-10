@@ -13,13 +13,12 @@ export default function SkillsMatrix() {
             </span>
           </div>
           <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-navy uppercase tracking-tight">
-            TECHNICAL TAXONOMY
+            SKILLS &amp; TOOLS
           </h2>
         </div>
         <p className="font-who-body-sm text-who-body-sm text-navy/60 max-w-md">
-          Architected for maintainability, speed, and resilient system
-          integrity across modern JavaScript runtimes and generative
-          workflows.
+          Built for easy maintenance, speed, and reliability — including
+          modern AI-powered workflows.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-who-gutter">

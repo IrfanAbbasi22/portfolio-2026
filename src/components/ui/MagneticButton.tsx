@@ -30,7 +30,7 @@ type CommonProps = {
    *  spacing scale (e.g. About's `who-space-*` tokens) where the generic `em`-based
    *  pill size would be inconsistent with the rest of that page. */
   sizeClassName?: string;
-  /** Replaces the default `font-mono text-[11px] font-bold uppercase tracking-widest`
+  /** Replaces the default `font-mono text-xs font-bold uppercase tracking-widest`
    *  label styling, for the same reason. */
   textClassName?: string;
   /** Replaces the tone's default fill-sweep color, for a one-off CTA that wants a
@@ -117,7 +117,7 @@ export default function MagneticButton({
       <span
         ref={textRef}
         className={`relative z-2 transition-colors duration-300 will-change-transform ${
-          textClassName ?? "font-mono text-[11px] font-bold uppercase tracking-widest"
+          textClassName ?? "font-mono text-xs font-bold uppercase tracking-widest"
         } ${textColorClassName ?? toneTextClass[tone]}`}
       >
         {children}

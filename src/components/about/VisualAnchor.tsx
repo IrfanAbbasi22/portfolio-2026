@@ -11,10 +11,10 @@ export default function VisualAnchor() {
           <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent flex items-end p-who-space-lg">
             <div className="flex flex-col">
               <span className="font-who-label-pill text-who-label-pill uppercase text-teal tracking-widest">
-                PRODUCTION RIG
+                MY SETUP
               </span>
               <span className="font-who-headline-sm text-who-headline-sm text-cream">
-                Precision Frontend &amp; AI Integration Engineering
+                Careful frontend development &amp; AI integration
               </span>
             </div>
           </div>
@@ -24,13 +24,12 @@ export default function VisualAnchor() {
             <div className="inline-flex items-center gap-who-space-xs text-coral">
               <span className="material-symbols-outlined text-[18px]">verified</span>
               <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-widest">
-                Philosophy Core
+                How I Work
               </span>
             </div>
             <p className="font-who-body-md text-who-body-md text-cream mt-who-space-xs">
-              &ldquo;Code architecture should read like well-curated
-              typography: balanced, deliberate, and free of redundant
-              friction.&rdquo;
+              &ldquo;Good code should read like good writing: clear,
+              intentional, and free of clutter.&rdquo;
             </p>
           </div>
           <div className="flex items-center gap-who-space-sm pt-who-space-md">

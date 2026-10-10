@@ -34,7 +34,7 @@ export function ContactFormSection() {
                 aria-invalid={Boolean(errors.name)}
               />
               {errors.name && (
-                <p className="mt-1 pl-2 text-[11px] font-semibold text-coral">{errors.name}</p>
+                <p className="mt-1 pl-2 text-xs font-semibold text-coral">{errors.name}</p>
               )}
             </div>
             <div>
@@ -54,7 +54,7 @@ export function ContactFormSection() {
                 aria-invalid={Boolean(errors.surname)}
               />
               {errors.surname && (
-                <p className="mt-1 pl-2 text-[11px] font-semibold text-coral">{errors.surname}</p>
+                <p className="mt-1 pl-2 text-xs font-semibold text-coral">{errors.surname}</p>
               )}
             </div>
           </div>
@@ -77,7 +77,7 @@ export function ContactFormSection() {
                 aria-invalid={Boolean(errors.email)}
               />
               {errors.email && (
-                <p className="mt-1 pl-2 text-[11px] font-semibold text-coral">{errors.email}</p>
+                <p className="mt-1 pl-2 text-xs font-semibold text-coral">{errors.email}</p>
               )}
             </div>
             <div>
@@ -113,7 +113,7 @@ export function ContactFormSection() {
               aria-invalid={Boolean(errors.message)}
             />
             {errors.message && (
-              <p className="mt-1 pl-2 text-[11px] font-semibold text-coral">{errors.message}</p>
+              <p className="mt-1 pl-2 text-xs font-semibold text-coral">{errors.message}</p>
             )}
           </div>
           {/* Footer of form: Privacy acceptance checkbox + minimal dark pill submit button */}
@@ -142,7 +142,7 @@ export function ContactFormSection() {
       </div>
       {/* Clean Location & Availability Footnote */}
       <div className="mt-8 text-center">
-        <p className="text-[11px] sm:text-xs uppercase tracking-[0.2em] font-semibold text-navy/60">
+        <p className="text-xs sm:text-xs uppercase tracking-[0.2em] font-semibold text-navy/60">
           New Delhi, India • Available Globally • Remote & Hybrid
         </p>
       </div>

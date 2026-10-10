@@ -64,8 +64,8 @@ export default function Footer() {
           {/* Big Display Header & CTA Row */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-12 md:pb-16 border-b border-white/15">
             <div>
-              <span className="text-[11px] font-mono tracking-[0.25em] uppercase text-teal font-bold block mb-3">
-                INTERFACES · INTELLIGENCE · ARCHITECTURE
+              <span className="text-xs font-mono tracking-[0.25em] uppercase text-teal font-bold block mb-3">
+                DESIGN · DEVELOPMENT · AI
               </span>
               <h2 className="font-condensed text-[48px] sm:text-[68px] md:text-[88px] lg:text-[104px] leading-[0.88] uppercase text-white tracking-wide">
                 HAVE A PROJECT IN MIND?
@@ -90,7 +90,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pt-12 pb-12 border-b border-white/10">
             {/* Column 1: Navigation */}
             <div className="md:col-span-4 flex flex-col items-start gap-2.5">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-white/50 block mb-1">
+              <span className="font-mono text-xs uppercase tracking-widest text-white/50 block mb-1">
                 [ SITEMAP ]
               </span>
               <MagneticLink
@@ -128,7 +128,7 @@ export default function Footer() {
 
             {/* Column 2: Direct Inquiries */}
             <div className="md:col-span-5 flex flex-col items-start gap-2">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-white/50 block mb-1">
+              <span className="font-mono text-xs uppercase tracking-widest text-white/50 block mb-1">
                 [ DIRECT INQUIRIES ]
               </span>
               <MagneticLink
@@ -146,14 +146,14 @@ export default function Footer() {
               <p className="font-mono text-xs text-white/60 pt-2">
                 NEW DELHI, INDIA · UTC +05:30
                 <br />
-                AVAILABLE GLOBALLY FOR SELECT CONTRACTS &amp; ARCHITECTURAL
+                AVAILABLE GLOBALLY FOR SELECT CONTRACTS &amp; TECHNICAL
                 ADVISORY
               </p>
             </div>
 
             {/* Column 3: Socials */}
             <div className="md:col-span-3 flex flex-col items-start md:items-end gap-2">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-white/50 block mb-1">
+              <span className="font-mono text-xs uppercase tracking-widest text-white/50 block mb-1">
                 [ CONNECT ]
               </span>
               <MagneticLink

@@ -9,7 +9,7 @@ import CTABanner from "@/components/about/CTABanner";
 export const metadata: Metadata = {
   title: "Who I Am — Mohd Irfan",
   description:
-    "Frontend developer Mohd Irfan's background, technical capabilities, experience timeline, and academic credentials.",
+    "Frontend developer Mohd Irfan's background, skills, work history, and education.",
 };
 
 export default function AboutPage() {

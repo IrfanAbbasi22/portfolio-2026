@@ -40,9 +40,9 @@ export default function Academics({
                 Delhi University
               </p>
               <p className="font-who-body-sm text-who-body-sm text-navy/60 mt-who-space-sm">
-                Grounded in critical analysis, structural communication, and
-                qualitative evaluation &mdash; informing high-clarity
-                interface writing and human-centric workflows.
+                Built a foundation in analysis, communication, and critical
+                thinking &mdash; skills that carry directly into writing
+                clear interfaces and designing for real people.
               </p>
             </div>
             <div className="pt-who-space-lg flex items-center gap-who-space-xs text-navy">
@@ -50,7 +50,7 @@ export default function Academics({
                 workspace_premium
               </span>
               <span className="font-who-label-pill text-who-label-pill uppercase tracking-wider">
-                Graduate Credential Conferred
+                Degree Completed
               </span>
             </div>
           </StackCard>
@@ -62,19 +62,18 @@ export default function Academics({
                   POSTGRADUATE
                 </span>
                 <span className="font-who-label-interactive text-who-label-interactive text-navy/60 uppercase">
-                  Sep 2026
+                  2024 &ndash; Sep 2026
                 </span>
               </div>
               <h3 className="font-who-headline-sm text-who-headline-sm text-navy uppercase">
                 Master of Computer Applications
               </h3>
               <p className="font-who-body-md text-who-body-md text-navy mt-who-space-xs">
-                Delhi University
+                Manipal University Jaipur
               </p>
               <p className="font-who-body-sm text-who-body-sm text-navy/60 mt-who-space-sm">
-                Rigorous advanced focus on algorithms, distributed data
-                structures, modern software engineering methodologies, and
-                advanced web services.
+                In-depth study of algorithms, data structures, modern
+                software engineering practices, and web services.
               </p>
             </div>
             <div className="pt-who-space-lg flex items-center gap-who-space-xs text-navy">

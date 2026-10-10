@@ -21,18 +21,18 @@ export default function ProjectCard({ project }: { project: Project }) {
       >
         <div className="flex items-start justify-between mb-4 border-b border-navy/10 pb-3">
           <div>
-            <span className="text-[10px] font-mono tracking-widest text-navy/50 uppercase block">
+            <span className="text-xs font-mono tracking-widest text-navy/50 uppercase block">
               — {project.index}
             </span>
             <h3 className="font-condensed text-[34px] leading-none uppercase text-navy mt-1">
               {project.title}
             </h3>
-            <span className="text-[10px] font-mono tracking-wider text-navy/70 uppercase">
+            <span className="text-xs font-mono tracking-wider text-navy/70 uppercase">
               {project.category}
             </span>
           </div>
           <div
-            className={`w-7 h-7 rounded-full border border-navy/30 flex items-center justify-center font-mono text-[10px] font-bold text-navy transition-colors duration-300 ${
+            className={`w-7 h-7 rounded-full border border-navy/30 flex items-center justify-center font-mono text-xs font-bold text-navy transition-colors duration-300 ${
               hasLink ? "group-hover:bg-navy group-hover:text-cream" : ""
             }`}
           >
@@ -49,11 +49,11 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
         </div>
         <div className="mt-4 flex items-center justify-between pt-2">
-          <span className="text-[11px] font-mono uppercase text-navy/60">
+          <span className="text-xs font-mono uppercase text-navy/60">
             {project.footerLabel}
           </span>
           {hasLink && (
-            <span className="text-[11px] font-mono uppercase font-bold text-navy transition-colors duration-300 group-hover:text-teal flex items-center gap-1">
+            <span className="text-xs font-mono uppercase font-bold text-navy transition-colors duration-300 group-hover:text-teal flex items-center gap-1">
               VIEW LIVE
               <span aria-hidden className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                 →

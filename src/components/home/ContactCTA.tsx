@@ -46,7 +46,7 @@ export default function ContactCTA() {
         {/* Three Prompt Questions Column */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
           <div className="flex flex-col gap-1 border-t border-white/15 pt-4">
-            <span className="text-[10px] font-mono uppercase tracking-widest text-white/50">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/50">
               DO YOU NEED TO
             </span>
             <p className="font-condensed text-xl sm:text-2xl uppercase tracking-wide text-white">
@@ -54,7 +54,7 @@ export default function ContactCTA() {
             </p>
           </div>
           <div className="flex flex-col gap-1 border-t border-white/15 pt-4">
-            <span className="text-[10px] font-mono uppercase tracking-widest text-white/50">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/50">
               DO YOU NEED TO
             </span>
             <p className="font-condensed text-xl sm:text-2xl uppercase tracking-wide text-white">
@@ -62,7 +62,7 @@ export default function ContactCTA() {
             </p>
           </div>
           <div className="flex flex-col gap-1 border-t border-white/15 pt-4">
-            <span className="text-[10px] font-mono uppercase tracking-widest text-white/50">
+            <span className="text-xs font-mono uppercase tracking-widest text-white/50">
               DO YOU NEED
             </span>
             <p className="font-condensed text-xl sm:text-2xl uppercase tracking-wide text-white">

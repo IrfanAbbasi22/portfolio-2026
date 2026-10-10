@@ -13,7 +13,7 @@ function MapPin({ label }: { label: string }) {
         />
         <circle cx="20" cy="19" r="10" className="fill-cream" />
       </svg>
-      <span className="absolute left-0 top-3.5 w-full text-center font-mono text-[11px] font-bold leading-none text-navy">
+      <span className="absolute left-0 top-3.5 w-full text-center font-mono text-xs font-bold leading-none text-navy">
         {label}
       </span>
     </div>
@@ -65,7 +65,7 @@ export default function ServiceItem({
       )}
 
       <div>
-        <span className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-coral block mb-2">
+        <span className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-coral block mb-2">
           STOP {stop}
         </span>
         <h3 className="font-condensed text-2xl uppercase leading-none tracking-wide text-navy mb-2">
@@ -81,7 +81,7 @@ export default function ServiceItem({
       <div className="mt-8">
         <MagneticLink
           strength={18}
-          className="font-mono text-[11px] font-bold uppercase tracking-wider text-navy hover:text-teal transition-colors inline-block"
+          className="font-mono text-xs font-bold uppercase tracking-wider text-navy hover:text-teal transition-colors inline-block"
           textClassName="inline-flex items-center gap-2"
           href="#contact"
         >

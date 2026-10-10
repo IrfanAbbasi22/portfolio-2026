@@ -11,9 +11,9 @@ export const services: Service[] = [
     number: "01.",
     title: "BRAND IDENTITY & DESIGN SYSTEMS",
     tagline:
-      "Architecture of visual tokens that tell the authentic truth of who you are.",
+      "Design systems that capture who you are, consistently, on every screen.",
     description:
-      "Building a design system means much more than drafting UI kits in Figma. It defines how digital products render, scale, and respond across thousands of screen breakpoints. Fluid typography scales, WCAG 2.1 AA accessibility, and tokens wired directly into CSS & Tailwind.",
+      "A design system is more than a Figma file — it's what keeps a product looking and feeling consistent at every screen size. I build fluid typography, accessible components (WCAG 2.1 AA), and design tokens wired directly into the codebase.",
     ctaLabel: "EXPLORE DESIGN SYSTEMS →",
   },
   {
@@ -22,15 +22,15 @@ export const services: Service[] = [
     tagline:
       "Interfaces engineered for people who use them, not just look at them.",
     description:
-      "Modern Next.js 15 App Router applications, headless Shopify Storefront GraphQL architectures, sub-second TTFB, and rock-solid state management. Every millisecond shaved from interaction latency directly compounds conversion and organic search rankings.",
-    ctaLabel: "EXPLORE WEB ARCHITECTURE →",
+      "Modern web apps built with Next.js and headless Shopify, fast to load and reliable to use. Faster, smoother interactions mean better conversion and better search rankings.",
+    ctaLabel: "EXPLORE WEB DEVELOPMENT →",
   },
   {
     number: "03.",
     title: "AI INTEGRATIONS & AUTOMATION",
     tagline: "When interface and intelligence work together seamlessly.",
     description:
-      "Real-time voice agent flows powered by ElevenLabs, custom LLM streaming interfaces, and n8n backend pipelines syncing CRM data seamlessly. Replacing high-friction forms with intelligent voice and automated qualification systems.",
+      "Real-time AI voice agents, live AI chat interfaces, and automated workflows that sync data between your tools — replacing clunky forms with smart, automatic systems.",
     ctaLabel: "EXPLORE AI INTEGRATIONS →",
   },
 ];

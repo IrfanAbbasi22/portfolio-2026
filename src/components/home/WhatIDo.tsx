@@ -22,15 +22,15 @@ export default function WhatIDo() {
           <div className="flex items-center gap-who-space-sm mb-who-space-xs">
             <span className="w-6 h-px bg-coral" />
             <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-[0.25em] text-navy font-bold">
-              02 / EXPERTISE · SERVICES
+              03 / EXPERTISE · SERVICES
             </span>
           </div>
           <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-navy uppercase tracking-tight">
             WHAT I DO
           </h2>
           <p className="font-who-body-sm text-who-body-sm text-navy/60 mt-who-space-sm">
-            Three focused engagements for teams who need design, engineering,
-            and intelligence working as one system.
+            Three ways I can help teams bring design, engineering, and AI
+            together.
           </p>
         </div>
         {/* Right Content: 3 Clean Editorial Columns & Stacks */}

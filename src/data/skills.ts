@@ -12,11 +12,11 @@ export const skillCategories: SkillCategory[] = [
   {
     badgeLabel: "CORE PLATFORMS",
     badgeClassName: "bg-navy text-cream",
-    metricLabel: "L98+ FID/INP",
+    metricLabel: "FAST & RESPONSIVE UI",
     metricClassName: "text-teal",
     title: "FRONTEND CORE",
     description:
-      "Architecture of resilient, high-speed user interfaces and design systems.",
+      "Building fast, reliable interfaces and design systems that hold up at scale.",
     tags: [
       "React 19",
       "Next.js 15 App Router",
@@ -28,11 +28,11 @@ export const skillCategories: SkillCategory[] = [
   {
     badgeLabel: "INTELLIGENCE",
     badgeClassName: "bg-coral text-white",
-    metricLabel: "SUB-200MS AUDIO",
+    metricLabel: "FAST VOICE RESPONSE",
     metricClassName: "text-coral",
     title: "AI & AUTOMATION",
     description:
-      "Voice agents, LLM streaming pipelines, and server-side automation.",
+      "AI voice agents, real-time AI responses, and backend automation.",
     tags: [
       "ElevenLabs Voice AI",
       "OpenAI Webhooks",
@@ -43,11 +43,11 @@ export const skillCategories: SkillCategory[] = [
   {
     badgeLabel: "DISTRIBUTED STATE",
     badgeClassName: "bg-navy text-white",
-    metricLabel: "EVENT-DRIVEN",
+    metricLabel: "REAL-TIME UPDATES",
     metricClassName: "text-navy/70",
-    title: "ARCHITECTURE & STATE",
+    title: "STATE MANAGEMENT",
     description:
-      "Predictable client state, optimistic updates, and bidirectional transport.",
+      "Reliable app state, instant UI updates, and real-time data syncing.",
     tags: [
       "Zustand",
       "TanStack React Query",
@@ -58,11 +58,11 @@ export const skillCategories: SkillCategory[] = [
   {
     badgeLabel: "EDGE COMMERCE",
     badgeClassName: "bg-teal text-navy",
-    metricLabel: "ZERO-LATENCY CACHING",
+    metricLabel: "INSTANT-LOAD CACHING",
     metricClassName: "text-teal",
-    title: "HEADLESS & PERFORMANCE",
+    title: "COMMERCE & PERFORMANCE",
     description:
-      "Edge-rendered storefronts and multi-region database architectures.",
+      "Fast-loading online stores and globally distributed databases.",
     tags: ["Shopify Hydrogen", "Webflow CMS", "Supabase", "Cloudflare Workers"],
   },
 ];
@@ -94,7 +94,7 @@ export const experienceRoles: ExperienceRole[] = [
       },
     ],
     description:
-      "Headed frontend architecture across enterprise client applications utilizing Next.js 15, React 19, and headless APIs. Engineered high-integrity validation workflows cutting inbound form spam by 80%, synchronized CRM pipelines, and configured automated end-to-end testing reducing production bugs by 45%.",
+      "Led frontend development for enterprise client applications using Next.js 15, React 19, and headless APIs. Built form validation that cut spam submissions by 80%, connected CRM systems, and set up automated testing that reduced bugs by 45%.",
     tags: ["NEXT.JS 15", "ELEVENLABS AI", "LEADSQUARED API", "CI/CD WORKFLOWS"],
   },
   {
@@ -103,7 +103,7 @@ export const experienceRoles: ExperienceRole[] = [
     role: "FRONTEND WEB DEVELOPER",
     roleAccentClassName: "text-teal",
     description:
-      "Designed and deployed 20+ responsive web platforms and headless e-commerce portals. Established foundational Atomic Design Systems and CSS component libraries ensuring pixel-perfect layout parity across all viewports with rigorous cross-browser testing.",
+      "Built and launched 20+ responsive websites and online stores. Created reusable design systems and component libraries, tested thoroughly across browsers and screen sizes.",
     tags: [
       "HEADLESS COMMERCE",
       "DESIGN SYSTEMS",

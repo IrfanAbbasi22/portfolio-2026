@@ -19,9 +19,9 @@ export default function CTABanner() {
               LOOKING FOR A DEDICATED FRONTEND DEVELOPER?
             </h2>
             <p className="font-who-body-md text-who-body-md text-cream/70 max-w-xl">
-              Available for selected senior consulting contracts, technical
-              advisory, or engineering leadership roles focusing on React,
-              Next.js, and autonomous AI-integrated frontends.
+              Available for senior consulting, technical advisory, or
+              engineering leadership roles — focused on React, Next.js, and
+              AI-powered frontend products.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-who-space-md">

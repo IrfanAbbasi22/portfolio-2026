@@ -11,14 +11,14 @@ export default function NotFound() {
   return (
     <main className="w-full overflow-x-clip font-sans">
       <section className="max-w-4xl mx-auto px-6 lg:px-12 pt-16 md:pt-24 pb-24 md:pb-32 min-h-[70vh] flex flex-col items-center justify-center text-center">
-        <span className="once-in will-change-transform font-mono text-[11px] md:text-xs tracking-[0.3em] uppercase text-coral font-bold mb-4">
+        <span className="once-in will-change-transform font-mono text-xs md:text-xs tracking-[0.3em] uppercase text-coral font-bold mb-4">
           ERROR 404
         </span>
         <h1 className="once-in will-change-transform font-condensed text-[120px] sm:text-[180px] md:text-[240px] leading-[0.8] uppercase text-navy tracking-tight select-none">
           404
         </h1>
         <p className="once-in will-change-transform font-syne text-xl sm:text-2xl md:text-3xl text-navy/80 max-w-xl mt-4 mb-10 leading-snug">
-          This page wandered off the architecture diagram. Let&rsquo;s get you back
+          This page wandered off somewhere. Let&rsquo;s get you back
           on track.
         </p>
         <div className="once-in will-change-transform flex flex-col sm:flex-row items-center gap-6">
