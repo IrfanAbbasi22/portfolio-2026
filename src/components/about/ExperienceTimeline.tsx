@@ -17,7 +17,7 @@ export default function ExperienceTimeline({
   eyebrow?: string;
 }) {
   return (
-    <section className="w-full px-who-margin md:px-who-margin-desktop py-who-space-2xl md:py-who-space-3xl">
+    <section className="w-full px-who-margin md:px-who-margin-desktop py-who-space-2xl">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-who-gutter-desktop">
         {/* Left Anchor */}
         <div className="md:col-span-3 md:sticky md:top-24 md:self-start">
@@ -27,7 +27,7 @@ export default function ExperienceTimeline({
               {eyebrow}
             </span>
           </div>
-          <h2 className="font-who-headline-lg text-who-headline-lg text-navy uppercase tracking-tight">
+          <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-navy uppercase tracking-tight">
             EXPERIENCE
           </h2>
           <p className="font-who-body-sm text-who-body-sm text-navy/60 mt-who-space-sm">

@@ -27,7 +27,7 @@ export default function AboutHero() {
         </div>
         {/* Right Dominant Display Column */}
         <div className="md:col-span-9 flex flex-col">
-          <h1 className="font-who-headline-display text-who-headline-display-mobile md:text-who-headline-display text-navy uppercase tracking-tight leading-[0.92]">
+          <h1 className="once-in will-change-transform font-who-headline-display text-who-headline-display-mobile md:text-who-headline-display text-navy uppercase tracking-tight leading-[0.92]">
             A FRONTEND SYSTEMS THINKER, NOT JUST A UI IMPLEMENTER.
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-who-space-lg mt-who-space-xl items-start">

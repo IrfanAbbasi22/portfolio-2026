@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import NameMarquee from "@/components/home/NameMarquee";
 import SelectedWorks from "@/components/home/SelectedWorks";
 import WhoIAm from "@/components/home/WhoIAm";
 import WhatIDo from "@/components/home/WhatIDo";
@@ -14,10 +15,11 @@ export default function Home() {
   return (
     <main className="w-full overflow-x-clip">
       <Hero />
+      <NameMarquee />
       <SelectedWorks />
       <WhoIAm />
       <WhatIDo />
-      <StrategicCoffee />
+      {/* <StrategicCoffee /> */}
       <SkillsExperience />
       <ExperienceTimeline eyebrow="04 / TRACK RECORD" />
       <Academics eyebrow="05 / PEDAGOGY" />

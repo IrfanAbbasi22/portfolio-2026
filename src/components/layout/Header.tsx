@@ -6,11 +6,11 @@ import { MorphingText } from "@/components/ui/morphing-text";
 const NAV_LINKS = [
   { href: "/#selected-works", label: "WORK" },
   { href: "/about", label: "ABOUT" },
-  { href: "/blog", label: "BLOG" },
+  // Blog is hidden for now — see NavOverlay.tsx and Footer.tsx for the matching omissions.
   { href: "/contact", label: "CONTACT" },
 ];
 
-const IDENTITY_TEXTS = ["Irfan Abbasi", "Frontend", "Developer", "UI"];
+const IDENTITY_TEXTS = ["Mohd Irfan", "Frontend", "Developer", "UI Developer", "Irfan Abbasi", "Full Stack"];
 
 /**
  * The top nav-bar only — identity mark + Work/About/Blog/Contact links. Matches Dennis's

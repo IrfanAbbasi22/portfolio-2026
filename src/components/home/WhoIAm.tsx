@@ -69,7 +69,7 @@ export default function WhoIAm() {
             <MagneticLink
               strength={18}
               className="font-mono text-sm md:text-base font-bold uppercase tracking-[0.2em] text-white/90 hover:text-navy transition-colors inline-block"
-              href="#who-i-am"
+              href="/about"
             >
               (WHO I AM)
             </MagneticLink>

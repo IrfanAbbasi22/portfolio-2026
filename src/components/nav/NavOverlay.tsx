@@ -16,7 +16,7 @@ const EASE_DRAWER = "cubic-bezier(0.7,0,0.2,1)";
 const NAV_ITEMS = [
   { href: "/about", label: "WHO I AM", meta: "Background & Ethos" },
   { href: "/#selected-works", label: "WHAT I DO", meta: "Works & Architecture", homeAnchor: true },
-  { href: "/blog", label: "BLOG", meta: "Essays & Systems" },
+  // Blog is hidden for now — see Header.tsx and Footer.tsx for the matching omissions.
   { href: "/contact", label: "CONTACT", meta: "Start Partnership" },
 ];
 

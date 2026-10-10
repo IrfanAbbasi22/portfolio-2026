@@ -15,7 +15,7 @@ export default function Academics({
               {eyebrow}
             </span>
           </div>
-          <h2 className="font-who-headline-lg text-who-headline-lg text-navy uppercase tracking-tight">
+          <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-navy uppercase tracking-tight">
             ACADEMICS
           </h2>
         </div>

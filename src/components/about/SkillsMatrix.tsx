@@ -12,7 +12,7 @@ export default function SkillsMatrix() {
               02 / CAPABILITIES
             </span>
           </div>
-          <h2 className="font-who-headline-lg text-who-headline-lg text-navy uppercase tracking-tight">
+          <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-navy uppercase tracking-tight">
             TECHNICAL TAXONOMY
           </h2>
         </div>

@@ -8,7 +8,7 @@
         </span>
       </div>
       <div className="space-y-4">
-        <h1 className="font-headline-display text-teal text-[42px] md:text-[76px] lg:text-[96px] tracking-tight uppercase leading-[0.9] select-none break-words">
+        <h1 className="once-in will-change-transform font-headline-display text-teal text-[42px] md:text-[76px] lg:text-[96px] tracking-tight uppercase leading-[0.9] select-none break-words">
           SYSTEMS, CODE ARCHITECTURE &amp; AI INTEGRATIONS
         </h1>
         <p className="font-label-eyebrow text-label-eyebrow text-navy/70 tracking-[0.2em] uppercase max-w-2xl pt-2">

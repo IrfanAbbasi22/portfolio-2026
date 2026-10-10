@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import PageIntro from "@/components/blog/PageIntro";
-import EssaysSection from "@/components/blog/EssaysSection";
-import PhilosophyBanner from "@/components/blog/PhilosophyBanner";
-import CtaBanner from "@/components/blog/CtaBanner";
-import { blogPosts, getFeaturedPost } from "@/data/blogPosts";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Technical Essays — Mohd Irfan",
@@ -11,18 +7,9 @@ export const metadata: Metadata = {
     "Reflections on building resilient frontend interfaces, component contracts, and modern web architectures.",
 };
 
-export default function BlogPage() {
-  const featuredPost = getFeaturedPost() ?? blogPosts[0];
-  const gridPosts = blogPosts.filter((post) => post.slug !== featuredPost.slug);
-
-  return (
-    <main className="w-full font-sans">
-      <div className="flex flex-col w-full">
-        <PageIntro />
-        <EssaysSection featuredPost={featuredPost} gridPosts={gridPosts} />
-        <PhilosophyBanner />
-        <CtaBanner />
-      </div>
-    </main>
-  );
+// Blog is hidden for now — route disabled, components untouched in components/blog/
+// and data/blogPosts.ts for whenever it comes back (see Header.tsx, NavOverlay.tsx,
+// Footer.tsx for the matching nav omissions).
+export default function BlogPage(): never {
+  notFound();
 }

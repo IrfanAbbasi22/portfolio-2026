@@ -9,7 +9,7 @@ export default function Hero() {
       </div>
       {/* Huge Tall Ultra-Condensed Accent Headline in Soft Sage/Teal Green */}
       <div className="mb-2">
-        <h2 className="font-condensed text-[54px] sm:text-[76px] md:text-[110px] lg:text-[142px] leading-[0.85] uppercase text-teal tracking-[0.02em] select-none font-normal">
+        <h2 className="once-in will-change-transform font-condensed text-[54px] sm:text-[76px] md:text-[110px] lg:text-[142px] leading-[0.85] uppercase text-teal tracking-[0.02em] select-none font-normal">
           FRONTEND SYSTEMS DEVELOPER / ARCHITECT
         </h2>
       </div>
@@ -27,7 +27,7 @@ export default function Hero() {
           </span>
         </div>
         <div className="lg:col-span-11">
-          <h1 className="font-syne text-[36px] sm:text-[50px] md:text-[68px] lg:text-[84px] leading-[1.04] text-navy uppercase tracking-[-0.02em] font-normal max-w-6xl">
+          <h1 className="once-in will-change-transform font-syne text-[36px] sm:text-[50px] md:text-[68px] lg:text-[84px] leading-[1.04] text-navy uppercase tracking-[-0.02em] font-normal max-w-6xl">
             BUILDING <span className="font-extrabold text-navy">FRONTEND SYSTEMS</span> &amp; WEB PLATFORMS THAT CONNECT{" "}
             <span className="font-extrabold text-navy">DESIGN TO INTELLIGENCE</span>
           </h1>

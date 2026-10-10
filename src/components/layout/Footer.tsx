@@ -1,14 +1,66 @@
 "use client";
 
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MagneticLink from "@/components/ui/MagneticLink";
 import MagneticButton from "@/components/ui/MagneticButton";
 
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
 export default function Footer() {
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  // Adapts dennissnellenberg.com's footer reveal (dennis-animation-breakdown/03-footer-
+  // reveal.md: a curved edge that flattens on scroll, plus the footer parallaxing up
+  // from behind) to this panel's own floating-card shape rather than his full-bleed
+  // one: the top corners start over-rounded and relax to the panel's real resting
+  // radius — the same "curve flattens as it's revealed" read — while the whole card
+  // slides up slightly, both scrubbed to scroll position instead of Locomotive Scroll's
+  // `data-scroll-speed`, per the doc's "Without Locomotive" note.
+  useLayoutEffect(() => {
+    const panel = panelRef.current;
+    if (!panel) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const ctx = gsap.context(() => {
+      const restRadius = parseFloat(getComputedStyle(panel).borderTopLeftRadius) || 32;
+
+      gsap.fromTo(
+        panel,
+        {
+          yPercent: 6,
+          borderTopLeftRadius: restRadius * 2.5,
+          borderTopRightRadius: restRadius * 2.5,
+        },
+        {
+          yPercent: 0,
+          borderTopLeftRadius: restRadius,
+          borderTopRightRadius: restRadius,
+          ease: "none",
+          scrollTrigger: {
+            trigger: panel,
+            start: "top bottom",
+            end: "top 65%",
+            scrub: true,
+          },
+        },
+      );
+    }, panel);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <footer className="w-full bg-cream pb-12 pt-4">
       <div className="max-w-[1720px] mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
         {/* Floating Container Footer with Deep Navy Background */}
-        <div className="w-full bg-navy rounded-[2rem] md:rounded-home-4xl lg:rounded-home-5xl p-8 sm:p-12 md:p-16 lg:p-20 text-white shadow-2xl relative overflow-hidden">
+        <div
+          ref={panelRef}
+          className="w-full bg-navy rounded-[2rem] md:rounded-home-4xl lg:rounded-home-5xl p-8 sm:p-12 md:p-16 lg:p-20 text-white shadow-2xl relative overflow-hidden will-change-transform"
+        >
           {/* Big Display Header & CTA Row */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-12 md:pb-16 border-b border-white/15">
             <div>
@@ -59,12 +111,7 @@ export default function Footer() {
               >
                 SELECTED WORKS
               </MagneticLink>
-              <MagneticLink
-                className="inline-block font-condensed text-2xl uppercase tracking-wider text-white hover:text-teal transition-colors"
-                href="/blog"
-              >
-                BLOG
-              </MagneticLink>
+              {/* Blog is hidden for now — see Header.tsx and NavOverlay.tsx for the matching omissions. */}
               <MagneticLink
                 className="inline-block font-condensed text-2xl uppercase tracking-wider text-white hover:text-teal transition-colors"
                 href="/#skills-experience"

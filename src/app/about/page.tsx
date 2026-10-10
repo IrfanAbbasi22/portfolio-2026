@@ -13,8 +13,11 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  // overflow-x-clip (not hidden): `hidden` would turn <main> into a scroll
+  // container, which silently breaks the `position: sticky` pinning in
+  // ExperienceTimeline/Academics' stacked cards below.
   return (
-    <main className="w-full font-who-body-md bg-cream min-h-[calc(100vh-20rem)]">
+    <main className="w-full overflow-x-clip font-who-body-md bg-cream min-h-[calc(100vh-20rem)]">
       <div className="flex flex-col w-full">
         <AboutHero />
         <VisualAnchor />

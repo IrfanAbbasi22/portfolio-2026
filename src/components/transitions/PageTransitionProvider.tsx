@@ -26,24 +26,38 @@ export default function PageTransitionProvider() {
     const arcTop = arcTopRef.current;
     if (!root || !arcTop) return;
 
-    const isDesktop = window.innerWidth > 540;
-    const arcHeight = isDesktop ? "10vh" : "5vh";
     document.documentElement.style.cursor = "wait";
     isCoveredRef.current = true;
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        const href = pendingHrefRef.current;
-        if (href) router.push(href);
-      },
-    });
+    // Safety net: if building/running this timeline throws, `isCoveredRef` would
+    // otherwise stay `true` forever — the curtain is left fully covering the screen
+    // with no `playIn()` ever queued to lift it, and no click would get through to
+    // retry (clicks are ignored while covered). Fall back to a plain navigation.
+    try {
+      const isDesktop = window.innerWidth > 540;
+      const arcHeight = isDesktop ? "10vh" : "5vh";
 
-    tl.set(root, { top: "100%" });
-    tl.set(arcTop, { height: arcHeight });
-    // curtain rises from the bottom of the screen
-    tl.to(root, { duration: 0.5, top: "0%", ease: "power4.in" });
-    // mirrored arc at the top edge, growing in sync
-    tl.to(arcTop, { duration: 0.4, height: "0vh", ease: "power4.in" }, "-=.4");
+      const tl = gsap.timeline({
+        onComplete: () => {
+          const href = pendingHrefRef.current;
+          if (href) router.push(href);
+        },
+      });
+
+      tl.set(root, { top: "100%" });
+      tl.set(arcTop, { height: arcHeight });
+      // curtain rises from the bottom of the screen
+      tl.to(root, { duration: 0.5, top: "0%", ease: "power4.in" });
+      // mirrored arc at the top edge, growing in sync
+      tl.to(arcTop, { duration: 0.4, height: "0vh", ease: "power4.in" }, "-=.4");
+    } catch (error) {
+      console.error("Page transition failed to start; navigating without it.", error);
+      document.documentElement.style.cursor = "auto";
+      isCoveredRef.current = false;
+      const href = pendingHrefRef.current;
+      pendingHrefRef.current = null;
+      if (href) router.push(href);
+    }
   }, [router]);
 
   const playIn = useCallback(() => {
@@ -51,24 +65,48 @@ export default function PageTransitionProvider() {
     const arcBottom = arcBottomRef.current;
     if (!root || !arcBottom) return;
 
-    const isDesktop = window.innerWidth > 540;
-    const arcHeight = isDesktop ? "10vh" : "5vh";
-
     window.scrollTo(0, 0);
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        document.documentElement.style.cursor = "auto";
-        isCoveredRef.current = false;
-        pendingHrefRef.current = null;
-      },
-    });
+    // Safety net, same reasoning as playOut's: a throw here would otherwise leave
+    // `isCoveredRef` stuck `true` and the curtain stuck fully covering the new page,
+    // with nothing left to lift it.
+    const reveal = () => {
+      document.documentElement.style.cursor = "auto";
+      isCoveredRef.current = false;
+      pendingHrefRef.current = null;
+      root.style.top = "100%";
+      gsap.set(document.querySelectorAll<HTMLElement>("main .once-in"), {
+        clearProps: "transform",
+      });
+    };
 
-    tl.set(arcBottom, { height: arcHeight });
-    // curtain continues up and off-screen, curved trailing edge collapsing behind it
-    tl.to(root, { duration: 0.8, top: "-100%", ease: "power3.inOut" });
-    tl.to(arcBottom, { duration: 0.85, height: "0vh", ease: "power3.inOut" }, "-=.6");
-    tl.set(root, { top: "100%" }, "+=0");
+    try {
+      const isDesktop = window.innerWidth > 540;
+      const arcHeight = isDesktop ? "10vh" : "5vh";
+
+      // The new page's content — already in the DOM by the time this runs, but the
+      // curtain is still fully covering it, so it's safe to offset it here with no
+      // flash (docs: dennis-animation-breakdown/02-page-transition.md).
+      const onceInEls = document.querySelectorAll<HTMLElement>("main .once-in");
+      gsap.set(onceInEls, { y: isDesktop ? "50vh" : "20vh" });
+
+      const tl = gsap.timeline({ onComplete: reveal });
+
+      tl.set(arcBottom, { height: arcHeight });
+      // curtain continues up and off-screen, curved trailing edge collapsing behind it
+      tl.to(root, { duration: 0.8, top: "-100%", ease: "power3.inOut" });
+      tl.to(arcBottom, { duration: 0.85, height: "0vh", ease: "power3.inOut" }, "-=.6");
+      tl.set(root, { top: "100%" }, "+=0");
+      // new page's content rises into place, overlapping the curtain's lift
+      tl.to(
+        onceInEls,
+        { duration: 1, y: "0vh", stagger: 0.05, ease: "expo.out" },
+        "-=.6",
+      );
+    } catch (error) {
+      console.error("Page transition failed to finish; revealing page without it.", error);
+      reveal();
+    }
   }, []);
 
   // Intercept internal <Link>/<a> clicks site-wide.

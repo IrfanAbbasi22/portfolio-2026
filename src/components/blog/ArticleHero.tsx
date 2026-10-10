@@ -10,7 +10,7 @@ export default function ArticleHero({ post }: { post: BlogPost }) {
         </span>
       </div>
       <div className="space-y-4">
-        <h1 className="font-headline-display text-navy text-[34px] md:text-[52px] lg:text-[64px] tracking-tight uppercase leading-[0.95] break-words">
+        <h1 className="once-in will-change-transform font-headline-display text-navy text-[34px] md:text-[52px] lg:text-[64px] tracking-tight uppercase leading-[0.95] break-words">
           {post.title}
         </h1>
         <p className="font-body-md text-navy/80 text-sm sm:text-base leading-relaxed max-w-3xl">

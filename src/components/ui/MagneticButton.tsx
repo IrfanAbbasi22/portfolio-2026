@@ -33,6 +33,12 @@ type CommonProps = {
   /** Replaces the default `font-mono text-[11px] font-bold uppercase tracking-widest`
    *  label styling, for the same reason. */
   textClassName?: string;
+  /** Replaces the tone's default fill-sweep color, for a one-off CTA that wants a
+   *  different hover/focus accent without a whole new tone. */
+  fillClassName?: string;
+  /** Replaces the tone's default rest/hover/focus text color classes — e.g. to keep
+   *  the label a fixed color instead of swapping on hover/focus with the tone. */
+  textColorClassName?: string;
 };
 
 type MagneticButtonProps = CommonProps &
@@ -65,10 +71,10 @@ const toneFill: Record<Tone, string> = {
 // inline styles — the color is correct from first paint with no JS involved at all,
 // the same reason HamburgerMenu's own fill/label never flash wrong or blank.
 const toneTextClass: Record<Tone, string> = {
-  light: "text-navy group-hover/btn:text-cream",
-  dark: "text-cream group-hover/btn:text-navy",
-  accent: "text-navy group-hover/btn:text-cream",
-  coral: "text-cream group-hover/btn:text-navy",
+  light: "text-navy group-hover/btn:text-cream group-focus-visible/btn:text-cream",
+  dark: "text-cream group-hover/btn:text-navy group-focus-visible/btn:text-navy",
+  accent: "text-navy group-hover/btn:text-cream group-focus-visible/btn:text-cream",
+  coral: "text-cream group-hover/btn:text-navy group-focus-visible/btn:text-navy",
 };
 
 export default function MagneticButton({
@@ -80,6 +86,8 @@ export default function MagneticButton({
   className = "",
   sizeClassName,
   textClassName,
+  fillClassName,
+  textColorClassName,
   href,
   ...rest
 }: MagneticButtonProps) {
@@ -98,18 +106,19 @@ export default function MagneticButton({
     <>
       {/* Same fill-sweep recipe as HamburgerMenu's badge: a plain CSS
           `transition-transform` + `group-hover:translate-y-0`, no GSAP — the mechanic
-          this component is meant to match sitewide. */}
+          this component is meant to match sitewide. Also triggers on keyboard focus,
+          not just hover, so the sweep isn't pointer-only. */}
       <span
         aria-hidden
         className={`btn-fill pointer-events-none absolute -top-1/2 -left-1/4 h-[200%] w-[150%] rounded-full
           -translate-y-[76%] transition-transform duration-500 ease-in-out will-change-transform
-          group-hover/btn:translate-y-0 ${toneFill[tone]}`}
+          group-hover/btn:translate-y-0 group-focus-visible/btn:translate-y-0 ${fillClassName ?? toneFill[tone]}`}
       />
       <span
         ref={textRef}
         className={`relative z-2 transition-colors duration-300 will-change-transform ${
           textClassName ?? "font-mono text-[11px] font-bold uppercase tracking-widest"
-        } ${toneTextClass[tone]}`}
+        } ${textColorClassName ?? toneTextClass[tone]}`}
       >
         {children}
       </span>

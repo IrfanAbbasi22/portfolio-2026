@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="w-full font-sans">
+    <main className="w-full overflow-x-clip font-sans">
       <PageIntro />
       <ContactFormSection />
     </main>

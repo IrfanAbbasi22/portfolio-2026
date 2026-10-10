@@ -6,7 +6,7 @@ export function PageIntro() {
   return (
     <section className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 md:pt-24 pb-10 text-center flex flex-col items-center">
       {/* Condensed Mango Grotesque Style Headline */}
-      <h1 className="font-condensed text-[3.75rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[8.5rem] leading-[0.88] uppercase text-navy tracking-tight select-none">
+      <h1 className="once-in will-change-transform font-condensed text-[3.75rem] sm:text-[5.5rem] md:text-[7.5rem] lg:text-[8.5rem] leading-[0.88] uppercase text-navy tracking-tight select-none">
         Are You Looking For a Partner?
       </h1>
       {/* Direct Minimal Contact Horizontal Strip */}

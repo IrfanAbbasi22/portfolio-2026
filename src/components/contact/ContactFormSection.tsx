@@ -117,36 +117,16 @@ export function ContactFormSection() {
             )}
           </div>
           {/* Footer of form: Privacy acceptance checkbox + minimal dark pill submit button */}
-          <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div className="flex flex-col gap-1">
-              <label className="flex items-center gap-3 cursor-pointer select-none text-xs text-navy/90 font-medium">
-                <input
-                  className="w-4 h-4 rounded text-navy focus:ring-navy/50 bg-white border-0 cursor-pointer"
-                  required
-                  type="checkbox"
-                  name="consent"
-                  checked={values.consent}
-                  onChange={(event) => setField("consent", event.target.checked)}
-                  aria-invalid={Boolean(errors.consent)}
-                />
-                <span>
-                  <MagneticLink strength={12} className="inline-block underline hover:opacity-80" href="#">
-                    Privacy Policy
-                  </MagneticLink>{" "}
-                  Acceptance
-                </span>
-              </label>
-              {errors.consent && (
-                <p className="pl-7 text-[11px] font-semibold text-coral">{errors.consent}</p>
-              )}
-            </div>
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-6">
             <MagneticButton
               tone="dark"
               strength={30}
               strengthText={15}
               sizeClassName="w-full sm:w-auto px-10 py-3.5 rounded-2xl shadow-sm"
               textClassName="text-xs font-bold uppercase tracking-[0.16em]"
+              textColorClassName="text-cream"
               className="disabled:opacity-60"
+              fillClassName="bg-coral"
               type="submit"
               disabled={status === "submitting"}
             >
