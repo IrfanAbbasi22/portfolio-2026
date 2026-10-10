@@ -82,22 +82,22 @@ export default function NameMarquee() {
   }, []);
 
   return (
-    <section className="w-full overflow-hidden bg-navy py-8 sm:py-10 md:py-14 mb-24 md:mb-32">
+    <section className="w-full overflow-hidden bg-navy py-4 sm:py-6 md:py-8 mb-24 md:mb-32">
       <div ref={wrapRef} className="relative flex">
         <div
           ref={trackRef}
           className="once-in flex items-center whitespace-nowrap will-change-transform"
         >
-          <span className="font-condensed text-[15vw] sm:text-[12vw] md:text-[9vw] leading-none uppercase text-cream">
+          <span className="font-condensed text-[10vw] sm:text-[8vw] md:text-[6vw] leading-none uppercase text-cream">
             Mohd Irfan
           </span>
-          <span className="mx-[3vw] font-condensed text-[15vw] sm:text-[12vw] md:text-[9vw] leading-none uppercase text-coral">
+          <span className="mx-[3vw] font-condensed text-[10vw] sm:text-[8vw] md:text-[6vw] leading-none uppercase text-coral">
             —
           </span>
-          <span className="font-condensed text-[15vw] sm:text-[12vw] md:text-[9vw] leading-none uppercase text-teal">
-            Frontend Architect
+          <span className="font-condensed text-[10vw] sm:text-[8vw] md:text-[6vw] leading-none uppercase text-teal">
+            Frontend Developer
           </span>
-          <span className="mx-[3vw] font-condensed text-[15vw] sm:text-[12vw] md:text-[9vw] leading-none uppercase text-coral">
+          <span className="mx-[3vw] font-condensed text-[10vw] sm:text-[8vw] md:text-[6vw] leading-none uppercase text-coral">
             —
           </span>
         </div>

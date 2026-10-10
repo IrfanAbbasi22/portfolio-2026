@@ -196,9 +196,9 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 rounded-full bg-teal"></div>
               <span className="font-bold text-white uppercase">MOHD IRFAN</span>
-              <span>— FRONTEND SYSTEMS ARCHITECT</span>
+              <span>— FRONTEND DEVELOPER</span>
             </div>
-            <div>ALL RIGHTS RESERVED © 2025 · CRAFTED WITH REACT &amp; NEXT.JS</div>
+            <div>ALL RIGHTS RESERVED © {new Date().getFullYear()} · CRAFTED WITH REACT &amp; NEXT.JS</div>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function AboutHero() {
               DISCIPLINE
             </span>
             <p className="font-who-headline-sm text-who-headline-sm text-navy">
-              Frontend Architect
+              Frontend Developer
             </p>
             <span className="font-who-label-pill text-who-label-pill uppercase text-navy/45 tracking-widest mt-who-space-sm">
               SPECIALTY

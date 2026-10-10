@@ -1,6 +1,5 @@
 import ProjectCard from "./ProjectCard";
 import ProjectGrid from "./ProjectGrid";
-import MagneticLink from "@/components/ui/MagneticLink";
 import { projects } from "@/data/projects";
 
 export default function SelectedWorks() {
@@ -36,16 +35,6 @@ export default function SelectedWorks() {
               <ProjectCard key={project.title} project={project} />
             ))}
           </ProjectGrid>
-          {/* Bottom Centered "(SHOW ALL)" Pill Link */}
-          <div className="w-full text-center mt-20 lg:mt-28">
-            <MagneticLink
-              strength={18}
-              className="font-condensed text-2xl md:text-3xl uppercase tracking-wider text-white/80 hover:text-teal transition-colors inline-block py-2 px-6"
-              href="#"
-            >
-              (SHOW ALL)
-            </MagneticLink>
-          </div>
         </div>
       </div>
     </section>

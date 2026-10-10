@@ -22,7 +22,7 @@ export default function Home() {
       {/* <StrategicCoffee /> */}
       <SkillsExperience />
       <ExperienceTimeline eyebrow="04 / TRACK RECORD" />
-      <Academics eyebrow="05 / PEDAGOGY" />
+      {/* <Academics eyebrow="05 / PEDAGOGY" /> */}
       {/* <ContactCTA /> */}
     </main>
   );

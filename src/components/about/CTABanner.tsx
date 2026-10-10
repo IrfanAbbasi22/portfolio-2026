@@ -16,7 +16,7 @@ export default function CTABanner() {
               </span>
             </div>
             <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-cream uppercase tracking-tight">
-              LOOKING FOR A DEDICATED FRONTEND ARCHITECT?
+              LOOKING FOR A DEDICATED FRONTEND DEVELOPER?
             </h2>
             <p className="font-who-body-md text-who-body-md text-cream/70 max-w-xl">
               Available for selected senior consulting contracts, technical

@@ -10,6 +10,10 @@ export type Project = {
   offsetClassName?: string;
   /** Bespoke graphic mockup area — each project's visual is one-off. */
   mockup: ReactNode;
+  /** Live site or case-study URL. Omit when there's nowhere real to send a
+   *  visitor yet — the card then shows no "view" affordance at all instead of
+   *  a link that goes nowhere. */
+  liveUrl?: string;
 };
 
 export const projects: Project[] = [
