@@ -12,7 +12,7 @@ export default function SkillsExperience() {
         {/* Left Column: eyebrow/heading/description match ExperienceTimeline.tsx's
             "Left Anchor" style exactly, for consistency across these stacked home
             sections. */}
-        <div className="lg:col-span-3 lg:sticky lg:top-24 lg:self-start">
+        <div className="lg:col-span-4 xl:col-span-3 lg:sticky lg:top-24 lg:self-start">
           <div className="flex items-center gap-who-space-sm mb-who-space-xs">
             <span className="w-6 h-px bg-coral" />
             <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-[0.25em] text-navy font-bold">
@@ -27,7 +27,7 @@ export default function SkillsExperience() {
             production-grade interfaces.
           </p>
         </div>
-        <div className="lg:col-span-9">
+        <div className="lg:col-span-8 xl:col-span-9">
           <p className="font-syne text-xl sm:text-2xl md:text-3xl text-navy leading-snug max-w-3xl mb-12">
             ENGINEERED WITH RIGOROUS ARCHITECTURAL STANDARDS. COMBINING
             COMPONENT-LEVEL CRAFTSMANSHIP WITH PRODUCTION-SCALE RESILIENCE.

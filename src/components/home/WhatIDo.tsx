@@ -18,7 +18,7 @@ export default function WhatIDo() {
             passes straight through the now-frozen heading — the overlapping/ghosted
             text seen in an earlier bug report. Putting the label first means it's
             already scrolled past before the heading ever engages. */}
-        <div className="lg:col-span-3 lg:sticky lg:top-24 lg:self-start">
+        <div className="lg:col-span-4 xl:col-span-3 lg:sticky lg:top-24 lg:self-start">
           <div className="flex items-center gap-who-space-sm mb-who-space-xs">
             <span className="w-6 h-px bg-coral" />
             <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-[0.25em] text-navy font-bold">
@@ -34,7 +34,7 @@ export default function WhatIDo() {
           </p>
         </div>
         {/* Right Content: 3 Clean Editorial Columns & Stacks */}
-        <div className="lg:col-span-9 grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-0">
+        <div className="lg:col-span-8 xl:col-span-9 grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-0">
           {services.map((service, i) => (
             <ServiceItem key={service.title} service={service} isLast={i === services.length - 1} />
           ))}

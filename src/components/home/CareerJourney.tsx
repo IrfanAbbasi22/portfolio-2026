@@ -10,7 +10,7 @@ export default function CareerJourney() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
         {/* Left Column — matches WhatIDo/SkillsExperience's sticky "Left Anchor" style */}
-        <div className="lg:col-span-3 lg:sticky lg:top-24 lg:self-start">
+        <div className="lg:col-span-4 xl:col-span-3 lg:sticky lg:top-24 lg:self-start">
           <div className="flex items-center gap-who-space-sm mb-who-space-xs">
             <span className="w-6 h-px bg-coral" />
             <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-[0.25em] text-navy font-bold">
@@ -26,7 +26,7 @@ export default function CareerJourney() {
           </p>
         </div>
         {/* Right Content: career stops laid out as a map-pin route */}
-        <div className="lg:col-span-9">
+        <div className="lg:col-span-8 xl:col-span-9">
           <JourneyGrid className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-0">
             {journeyMilestones.map((milestone, i) => {
               const isLast = i === journeyMilestones.length - 1;

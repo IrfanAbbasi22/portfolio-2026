@@ -21,9 +21,9 @@ export default function ExperienceTimeline({
       id="experience"
       className="w-full px-who-margin md:px-who-margin-desktop py-who-space-2xl"
     >
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-who-gutter-desktop">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-who-gutter-desktop">
         {/* Left Anchor */}
-        <div className="md:col-span-3 md:sticky md:top-24 md:self-start">
+        <div className="lg:col-span-4 xl:col-span-3 lg:sticky lg:top-24 lg:self-start">
           <div className="flex items-center gap-who-space-sm mb-who-space-xs">
             <span className="w-6 h-[1px] bg-coral" />
             <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-[0.25em] text-navy font-bold">
@@ -38,7 +38,7 @@ export default function ExperienceTimeline({
             measurable results.
           </p>
           {/* Metric Callout Widget */}
-          <div className="bg-white rounded-xl p-who-space-md mt-who-space-xl hidden md:flex flex-col gap-who-space-xs">
+          <div className="bg-white rounded-xl p-who-space-md mt-who-space-xl hidden lg:flex flex-col gap-who-space-xs">
             <span className="font-who-label-pill text-who-label-pill uppercase text-coral tracking-wider">
               MEASURABLE IMPACT
             </span>
@@ -53,7 +53,7 @@ export default function ExperienceTimeline({
         </div>
         {/* Right Column: Timeline Narrative — stacked oldest to newest, so the
             current role scrolls to rest on top of the stack. */}
-        <StackCards className="md:col-span-9 flex flex-col gap-who-space-xl">
+        <StackCards className="lg:col-span-8 xl:col-span-9 flex flex-col gap-who-space-xl">
           {/* Delhi Web Master */}
           <StackCard className="bg-white rounded-xl p-who-space-lg md:p-who-space-xl shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-who-space-xs pb-who-space-md">

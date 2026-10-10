@@ -7,8 +7,8 @@ export default function Academics({
 }) {
   return (
     <section className="w-full px-who-margin md:px-who-margin-desktop py-who-space-2xl bg-cream">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-who-gutter-desktop">
-        <div className="md:col-span-3 md:sticky md:top-24 md:self-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-who-gutter-desktop">
+        <div className="lg:col-span-4 xl:col-span-3 lg:sticky lg:top-24 md:self-start">
           <div className="flex items-center gap-who-space-sm mb-who-space-xs">
             <span className="w-6 h-[1px] bg-coral" />
             <span className="font-who-label-eyebrow text-who-label-eyebrow uppercase tracking-[0.25em] text-navy font-bold">
@@ -21,7 +21,7 @@ export default function Academics({
         </div>
         {/* Stacked oldest to newest, so the in-progress degree scrolls to rest
             on top of the stack — mirrors ExperienceTimeline's treatment. */}
-        <StackCards className="md:col-span-9 flex flex-col gap-who-space-xl">
+        <StackCards className="lg:col-span-8 xl:col-span-9 flex flex-col gap-who-space-xl">
           {/* BA */}
           <StackCard className="bg-white rounded-xl p-who-space-lg flex flex-col justify-between shadow-sm">
             <div>
