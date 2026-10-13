@@ -143,7 +143,7 @@ export function ContactFormSection() {
       {/* Clean Location & Availability Footnote */}
       <div className="mt-8 text-center">
         <p className="text-xs sm:text-xs uppercase tracking-[0.2em] font-semibold text-navy/60">
-          New Delhi, India • Available Globally • Remote & Hybrid
+          New Delhi, India • Open to Full-Time Full Stack Roles • Delhi NCR
         </p>
       </div>
     </section>

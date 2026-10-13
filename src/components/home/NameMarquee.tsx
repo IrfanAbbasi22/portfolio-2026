@@ -95,7 +95,7 @@ export default function NameMarquee() {
             —
           </span>
           <span className="font-condensed text-[10vw] sm:text-[8vw] md:text-[6vw] leading-none uppercase text-teal">
-            Frontend Developer
+            Full Stack Developer
           </span>
           <span className="mx-[3vw] font-condensed text-[10vw] sm:text-[8vw] md:text-[6vw] leading-none uppercase text-coral">
             —

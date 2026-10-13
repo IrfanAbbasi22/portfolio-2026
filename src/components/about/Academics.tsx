@@ -62,7 +62,7 @@ export default function Academics({
                   POSTGRADUATE
                 </span>
                 <span className="font-who-label-interactive text-who-label-interactive text-navy/60 uppercase">
-                  2024 &ndash; Sep 2026
+                  Mar 2024 &ndash; 2026
                 </span>
               </div>
               <h3 className="font-who-headline-sm text-who-headline-sm text-navy uppercase">

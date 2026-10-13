@@ -66,7 +66,7 @@ export default function ContactCTA() {
               DO YOU NEED
             </span>
             <p className="font-condensed text-xl sm:text-2xl uppercase tracking-wide text-white">
-              A DEDICATED SENIOR FRONTEND LEAD?
+              A DEDICATED FULL STACK DEVELOPER?
             </p>
           </div>
         </div>

@@ -146,8 +146,7 @@ export default function Footer() {
               <p className="font-mono text-xs text-white/60 pt-2">
                 NEW DELHI, INDIA · UTC +05:30
                 <br />
-                AVAILABLE GLOBALLY FOR SELECT CONTRACTS &amp; TECHNICAL
-                ADVISORY
+                OPEN TO FULL-TIME FULL STACK ROLES · DELHI NCR
               </p>
             </div>
 
@@ -158,7 +157,7 @@ export default function Footer() {
               </span>
               <MagneticLink
                 className="inline-block font-mono text-xs uppercase tracking-[0.2em] font-semibold text-white/80 hover:text-teal transition-colors"
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/irfan-abbasii/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -172,22 +171,6 @@ export default function Footer() {
               >
                 GITHUB ↗
               </MagneticLink>
-              <MagneticLink
-                className="inline-block font-mono text-xs uppercase tracking-[0.2em] font-semibold text-white/80 hover:text-teal transition-colors"
-                href="https://behance.net"
-                rel="noreferrer"
-                target="_blank"
-              >
-                BEHANCE ↗
-              </MagneticLink>
-              <MagneticLink
-                className="inline-block font-mono text-xs uppercase tracking-[0.2em] font-semibold text-white/80 hover:text-teal transition-colors"
-                href="https://twitter.com"
-                rel="noreferrer"
-                target="_blank"
-              >
-                X / TWITTER ↗
-              </MagneticLink>
             </div>
           </div>
 
@@ -196,7 +179,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 rounded-full bg-teal"></div>
               <span className="font-bold text-white uppercase">MOHD IRFAN</span>
-              <span>— FRONTEND DEVELOPER</span>
+              <span>— FULL STACK DEVELOPER</span>
             </div>
             <div>ALL RIGHTS RESERVED © {new Date().getFullYear()} · CRAFTED WITH REACT &amp; NEXT.JS</div>
           </div>

@@ -42,7 +42,7 @@
               STAI CERCANDO
             </span>
             <span className="font-headline-sm text-sm font-bold tracking-wider text-cream uppercase block">
-              UN SENIOR FRONTEND SPECIALIST?
+              UN FULL STACK DEVELOPER?
             </span>
           </div>
         </div>

@@ -4,6 +4,8 @@ export type Project = {
   index: string;
   title: string;
   category: string;
+  /** Year label shown on the card. Empty string hides the badge instead of
+   *  showing a year that isn't on the CV. */
   year: string;
   footerLabel: string;
   /** Extra classes applied to the card for the staggered/offset grid layout. */
@@ -20,16 +22,17 @@ export const projects: Project[] = [
   {
     index: "01",
     title: "FUNDASSIST.AI",
-    category: "AI VOICE & LEAD AUTOMATION",
-    year: "2024",
-    footerLabel: "CONVERSATIONAL ENGINE",
+    category: "AI LEAD CAPTURE & AUTOMATION",
+    year: "",
+    footerLabel: "300+ LEADS · ~70% CALLBACK RATE",
+    liveUrl: "https://fundassist.ai/",
     mockup: (
       <div className="w-full h-56 bg-navy rounded-xl flex flex-col justify-between p-5 relative overflow-hidden group">
         <div className="flex items-center justify-between text-white/50 text-xs font-mono">
-          <span>VOICE SESSION AGENT</span>
+          <span>AI LEAD CAPTURE FLOW</span>
           <span className="flex items-center gap-1 text-teal font-bold">
             <span className="w-1.5 h-1.5 rounded-full bg-teal animate-ping"></span>
-            142ms
+            LIVE
           </span>
         </div>
         <div className="flex items-center gap-3">
@@ -38,12 +41,12 @@ export const projects: Project[] = [
             <span className="text-teal">.ai</span>
           </div>
           <span className="text-xs font-mono px-2 py-0.5 rounded bg-white/10 text-white/80">
-            LIVE AGENT
+            WHATSAPP + VOICE AGENT
           </span>
         </div>
         <div className="flex justify-end gap-1.5">
           <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-white text-navy font-bold">
-            NEXT.JS 15
+            NEXT.JS
           </span>
           <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-teal text-navy font-bold">
             ELEVENLABS
@@ -55,10 +58,11 @@ export const projects: Project[] = [
   {
     index: "02",
     title: "DELHI-IVF.COM",
-    category: "HEALTHCARE ARCHITECTURE",
-    year: "2024",
-    footerLabel: "PATIENT PORTAL",
+    category: "HEALTHCARE LEAD GENERATION",
+    year: "",
+    footerLabel: "100+ LEADS/WEEK TO LEADSQUARED",
     offsetClassName: "lg:mt-12",
+    liveUrl: "https://delhi-ivf.com/",
     mockup: (
       <div className="w-full h-56 bg-cream rounded-xl flex flex-col justify-between p-5 relative overflow-hidden">
         <div className="flex justify-between items-start">
@@ -75,15 +79,15 @@ export const projects: Project[] = [
         </div>
         <div className="border-t border-navy/20 pt-3">
           <p className="text-xs text-navy/80 leading-snug font-medium">
-            Server Actions &amp; LeadSquared synchronization infrastructure.
+            Next.js rebuild with a WhatsApp OTP gate and LeadSquared sync.
           </p>
         </div>
         <div className="flex justify-end gap-1.5 mt-2">
           <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full border border-navy text-navy font-bold bg-white">
-            UI DESIGN
+            WHATSAPP OTP
           </span>
           <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full border border-navy text-navy font-bold bg-white">
-            WIREFRAME
+            LEADSQUARED
           </span>
         </div>
       </div>
@@ -91,55 +95,17 @@ export const projects: Project[] = [
   },
   {
     index: "03",
-    title: "THE CENTURION ART",
-    category: "HEADLESS COMMERCE · LUXURY",
-    year: "2023",
-    footerLabel: "FINE ART E-COMMERCE",
-    mockup: (
-      <div className="w-full h-56 bg-navy rounded-xl flex flex-col justify-between p-4 relative overflow-hidden">
-        <div className="grid grid-cols-2 gap-2 h-36">
-          <div
-            className="h-full rounded overflow-hidden bg-cover bg-center border border-white/10"
-            role="img"
-            aria-label="The Centurion Art gallery piece, first collage image"
-            style={{
-              backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_XKWU5P8BQ3cwexa2RkjQ7xPeaWKVaYvEtrwjiNrIwknIGbZgYEUAa88_8oVqEHa_PAWynqIfdvM4sXPjzfFH8ZPMPjAgj2-dm5461uzmTrf1mbOSozwmIxP94rIKXk-htjtUSIdIkzxRv_Fq3_nQzf9xl_xHFO_QTr6rYmZAVv7c-5OUpO9yT3yzEnhohz80_Sjtgag4TLkw7hccz2rpg_f03h78r2W3WZb-0hLuoJuRwPtm2a23Gw')",
-            }}
-          />
-          <div
-            className="h-full rounded overflow-hidden bg-cover bg-center border border-white/10"
-            role="img"
-            aria-label="The Centurion Art gallery piece, second collage image"
-            style={{
-              backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbe_Qk-JNTOofN_rlpOL-mZfwCvZvUIjqTe1LctBAVfgPq-dRfwS-JEGreOT18M8FkwdBqt3gOgSdwa2lzNlQejxv8OVXwFW2eJUKYRtq8fxVjYZVJSanvWogl9zfvmCgbJZGRIw-LLJdF6a2lvBhsXRzPxLOyd_RSKBtrY4WUUkEvE334vlphul7Zr-tuvef5b1AQcxQMyBx6ZbtzBl36e0eyimEr1yw4o0g7noDorAD0QW4gJyDknA')",
-            }}
-          />
-        </div>
-        <div className="flex justify-end gap-1.5">
-          <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-white text-navy font-bold">
-            SHOPIFY
-          </span>
-          <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-white text-navy font-bold">
-            GRAPHQL
-          </span>
-        </div>
-      </div>
-    ),
-  },
-  {
-    index: "04",
     title: "SPROUTAI.TECH",
     category: "INTERACTIVE FRONTEND · GSAP",
-    year: "2024",
+    year: "2026",
     footerLabel: "STARTUP NARRATIVE",
     offsetClassName: "lg:mt-4",
+    liveUrl: "https://sproutai.tech/",
     mockup: (
       <div className="w-full h-56 bg-coral rounded-xl flex flex-col justify-between p-5 relative overflow-hidden">
         <div className="flex items-center justify-between text-white font-mono text-xs">
-          <span>TIMELINE ORCHESTRATION</span>
-          <span className="font-bold">60 FPS</span>
+          <span>WEBFLOW BUILD</span>
+          <span className="font-bold">GSAP</span>
         </div>
         <div className="flex items-center justify-center">
           <span className="font-syne font-extrabold text-2xl tracking-tighter text-white">
@@ -158,10 +124,10 @@ export const projects: Project[] = [
     ),
   },
   {
-    index: "05",
+    index: "04",
     title: "HL GIGGS",
     category: "HEADLESS COMMERCE · WOOCOMMERCE",
-    year: "2024",
+    year: "",
     footerLabel: "STOREFRONT SYSTEM",
     offsetClassName: "lg:mt-16",
     mockup: (
@@ -189,10 +155,39 @@ export const projects: Project[] = [
     ),
   },
   {
+    index: "05",
+    title: "KCSSHOP.IN",
+    category: "WORDPRESS · CUSTOM THEME",
+    year: "",
+    footerLabel: "SOCIAL LOGIN FLOW",
+    offsetClassName: "lg:mt-6",
+    liveUrl: "https://kcsshop.in/",
+    mockup: (
+      <div className="w-full h-56 bg-teal rounded-xl flex flex-col justify-between p-5 relative overflow-hidden">
+        <div className="flex items-center justify-between text-navy/70 text-xs font-mono">
+          <span>CUSTOM WORDPRESS THEME</span>
+        </div>
+        <div className="flex items-center justify-center">
+          <span className="font-syne font-extrabold text-2xl tracking-tighter text-navy">
+            kcsshop.in
+          </span>
+        </div>
+        <div className="flex justify-end gap-1.5">
+          <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-navy text-white font-bold">
+            WORDPRESS
+          </span>
+          <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-white text-navy font-bold">
+            SOCIAL LOGIN
+          </span>
+        </div>
+      </div>
+    ),
+  },
+  {
     index: "06",
     title: "ADDITIONAL CLIENT DELIVERY",
-    category: "RESPONSIVE UI & DESIGN-SYSTEM ALIGNMENT",
-    year: "2021–2024",
+    category: "CLIENT COORDINATION",
+    year: "",
     footerLabel: "MULTI-CLIENT ROSTER",
     offsetClassName: "lg:mt-6",
     mockup: (
@@ -211,10 +206,10 @@ export const projects: Project[] = [
         </div>
         <div className="flex justify-end gap-1.5">
           <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-white text-navy font-bold">
-            RESPONSIVE UI
+            CLIENT COORDINATION
           </span>
           <span className="text-[9px] font-mono uppercase px-2.5 py-1 rounded-full bg-teal text-navy font-bold">
-            DESIGN SYSTEMS
+            DESIGN HANDOFF
           </span>
         </div>
       </div>

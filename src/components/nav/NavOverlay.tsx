@@ -22,8 +22,7 @@ const NAV_ITEMS = [
 
 const SOCIAL_LINKS = [
   { href: "https://github.com/IrfanAbbasi22", label: "GitHub" },
-  { href: "https://linkedin.com", label: "LinkedIn" },
-  { href: "https://x.com", label: "X / Twitter" },
+  { href: "https://www.linkedin.com/in/irfan-abbasii/", label: "LinkedIn" },
 ];
 
 export default function NavOverlay({ isOpen, onClose }: NavOverlayProps) {
@@ -167,7 +166,7 @@ export default function NavOverlay({ isOpen, onClose }: NavOverlayProps) {
             <div className="pt-4 border-t border-cream/10 space-y-2 text-xs tracking-wider">
               <MagneticLink
                 strength={24}
-                href="/Mohd_Irfan_CV.pdf"
+                href="/mohd-irfan.pdf"
                 download
                 onClick={onClose}
                 className="inline-block font-mono uppercase tracking-widest text-coral hover:text-white transition-colors"

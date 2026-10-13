@@ -1,14 +1,20 @@
 import { StackCard, StackCards } from "@/components/ui/StackCards";
 
-const currentRoleHighlights = [
-  "Led frontend development for enterprise clients, building Next.js web applications, design systems, and AI-powered workflows that drive results.",
-  "Built custom API connections and form validation that cut spam submissions by 80% and helped more qualified leads get through.",
-  "Built reusable frontends for multiple client sites, pulling content from a shared CMS with automated builds and fast page caching.",
+const fullStackRoleHighlights = [
+  "Built the frontend and AI lead-capture flow for fundassist.ai: a WhatsApp chatbot qualifies visitors, then n8n hands them to an ElevenLabs voice agent or books an expert call, with every lead logged to Google Sheets. Brought in 300+ leads, with about 70% converting to a callback.",
+  "Rebuilt delhi-ivf.com from React to Next.js to fix SEO and page speed issues. Added WhatsApp OTP verification before the enquiry form submits, cutting spam by about 80%, and the site now sends 100+ genuine leads a week to LeadSquared.",
+  "Built sproutai.tech on Webflow with GSAP scroll animations (delivered Aug 2026).",
+];
+
+const frontendRoleHighlights = [
+  "Built and maintained reusable React component libraries used across client projects, adding new components to the shared design system when needed.",
+  "Improved load times on slower networks with lazy loading, dynamic imports and better state management, plus proper loading, empty and error states for API data.",
+  "Developed HL Giggs, a headless WooCommerce store on Next.js with custom product pages and mobile-friendly dashboards, and a custom WordPress theme for kcsshop.in with a customer social login flow.",
 ];
 
 const foundationalRoleHighlights = [
-  "Built responsive, accessible websites and custom online stores for clients across fashion, tech, and services.",
-  "Tested and improved site speed and performance (Core Web Vitals) across 20+ client websites, pushing average Google PageSpeed scores above 90.",
+  "Built responsive, cross-browser websites with HTML, CSS, JavaScript and Bootstrap for 5+ clients.",
+  "Turned design mockups into pixel-accurate, interactive pages using jQuery, working with the design team.",
 ];
 
 export default function ExperienceTimeline({
@@ -46,8 +52,8 @@ export default function ExperienceTimeline({
               -80%
             </span>
             <p className="font-who-body-sm text-who-body-sm text-navy/60">
-              Fewer spam submissions on client contact forms, after adding
-              custom validation checks.
+              Fewer spam submissions on delhi-ivf.com after adding WhatsApp
+              OTP verification to the enquiry form.
             </p>
           </div>
         </div>
@@ -62,7 +68,7 @@ export default function ExperienceTimeline({
                   FOUNDATIONAL STINT
                 </span>
                 <h3 className="font-who-headline-sm text-who-headline-sm text-navy mt-who-space-xs">
-                  Frontend Web Developer
+                  Jr. Web Developer
                 </h3>
                 <p className="font-who-body-md text-who-body-md text-navy/60 font-medium">
                   Delhi Web Master
@@ -84,24 +90,49 @@ export default function ExperienceTimeline({
                     arrow_forward
                   </span>
                   <p className="font-who-body-md text-who-body-md text-navy">
-                    {index === 1 ? (
-                      <>
-                        Systematically audited and optimized Core Web Vitals
-                        (LCP, CLS, FID) across{" "}
-                        <strong className="text-navy">
-                          20+ commercial client websites
-                        </strong>
-                        , boosting average Google PageSpeed scores above 90.
-                      </>
-                    ) : (
-                      highlight
-                    )}
+                    {highlight}
                   </p>
                 </div>
               ))}
             </div>
           </StackCard>
-          {/* NexGen Innovators */}
+          {/* NexGen Innovators — Frontend Developer */}
+          <StackCard className="bg-white rounded-xl p-who-space-lg md:p-who-space-xl shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-who-space-xs pb-who-space-md">
+              <div>
+                <span className="font-who-label-pill text-who-label-pill text-navy/60 tracking-widest uppercase">
+                  GROWTH STINT
+                </span>
+                <h3 className="font-who-headline-sm text-who-headline-sm text-navy mt-who-space-xs">
+                  Frontend Developer
+                </h3>
+                <p className="font-who-body-md text-who-body-md text-navy/60 font-medium">
+                  NexGen Innovators
+                </p>
+              </div>
+              <div className="inline-flex items-center gap-who-space-xs bg-cream px-who-space-sm py-who-space-xs rounded-full">
+                <span className="material-symbols-outlined text-[14px] text-navy/60">
+                  history
+                </span>
+                <span className="font-who-label-interactive text-who-label-interactive text-navy uppercase tracking-wider">
+                  Dec 2021 &ndash; Jan 2025
+                </span>
+              </div>
+            </div>
+            <div className="space-y-who-space-md pt-who-space-md">
+              {frontendRoleHighlights.map((highlight, index) => (
+                <div key={index} className="flex items-start gap-who-space-sm">
+                  <span className="material-symbols-outlined text-navy text-[20px] mt-0.5">
+                    arrow_forward
+                  </span>
+                  <p className="font-who-body-md text-who-body-md text-navy">
+                    {highlight}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </StackCard>
+          {/* NexGen Innovators — Full Stack Developer (current) */}
           <StackCard className="bg-white rounded-xl p-who-space-lg md:p-who-space-xl shadow-sm relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-teal/10 rounded-full blur-2xl pointer-events-none" />
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-who-space-xs pb-who-space-md">
@@ -110,7 +141,7 @@ export default function ExperienceTimeline({
                   CURRENT APPOINTMENT
                 </span>
                 <h3 className="font-who-headline-sm text-who-headline-sm text-navy mt-who-space-xs">
-                  Senior Frontend Engineer
+                  Full Stack Developer
                 </h3>
                 <p className="font-who-body-md text-who-body-md text-navy/60 font-medium">
                   NexGen Innovators
@@ -119,12 +150,12 @@ export default function ExperienceTimeline({
               <div className="inline-flex items-center gap-who-space-xs bg-cream px-who-space-sm py-who-space-xs rounded-full">
                 <span className="w-2 h-2 rounded-full bg-teal" />
                 <span className="font-who-label-interactive text-who-label-interactive text-navy uppercase tracking-wider">
-                  Dec 2021 &ndash; Present
+                  Feb 2025 &ndash; Present
                 </span>
               </div>
             </div>
             <div className="space-y-who-space-md pt-who-space-md">
-              {currentRoleHighlights.map((highlight, index) => (
+              {fullStackRoleHighlights.map((highlight, index) => (
                 <div key={index} className="flex items-start gap-who-space-sm">
                   <span className="material-symbols-outlined text-navy text-[20px] mt-0.5">
                     arrow_forward
@@ -132,13 +163,14 @@ export default function ExperienceTimeline({
                   <p className="font-who-body-md text-who-body-md text-navy">
                     {index === 1 ? (
                       <>
-                        Engineered custom API orchestrations and validation
-                        layers,{" "}
+                        Rebuilt delhi-ivf.com from React to Next.js to fix SEO
+                        and page speed issues. Added WhatsApp OTP verification
+                        before the enquiry form submits,{" "}
                         <strong className="text-navy">
-                          cutting form spam by 80%
-                        </strong>{" "}
-                        and dramatically scaling throughput for qualified lead
-                        funnels.
+                          cutting spam by about 80%
+                        </strong>
+                        , and the site now sends 100+ genuine leads a week to
+                        LeadSquared.
                       </>
                     ) : (
                       highlight

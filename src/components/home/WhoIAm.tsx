@@ -146,7 +146,7 @@ export default function WhoIAm() {
               ref={headingRef}
               className="font-syne text-[32px] sm:text-[46px] md:text-[62px] lg:text-[76px] leading-[1.08] tracking-[-0.01em] font-normal"
             >
-              <FadeWords text="I am a frontend developer. 5+ years shaping digital ideas into resilient, high-conversion realities. Specializing in" />{" "}
+              <FadeWords text="I am a full stack developer. 5+ years building web apps in" />{" "}
               <FadeHoverLink
                 item={STACK_PREVIEWS.react}
                 onHoverStart={onHoverStart}
@@ -164,16 +164,16 @@ export default function WhoIAm() {
               >
                 Next.js
               </FadeHoverLink>
-              <FadeWords text=", and" />{" "}
+              <FadeWords text="and TypeScript. Since 2025 I've worked on both frontend and backend, connecting apps with CRMs and" />{" "}
               <FadeHoverLink
                 item={STACK_PREVIEWS.ai}
                 onHoverStart={onHoverStart}
                 onHoverMove={onHoverMove}
                 onHoverEnd={onHoverEnd}
               >
-                AI Systems
+                AI tools
               </FadeHoverLink>{" "}
-              <FadeWords text="for founders who have something of value and need it to be seen." />
+              <FadeWords text="like WhatsApp chatbots, ElevenLabs voice agents and n8n." />
             </h2>
             <div className="mt-12 md:mt-16">
               <MagneticLink

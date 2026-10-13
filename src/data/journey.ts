@@ -12,17 +12,25 @@ export const journeyMilestones: JourneyMilestone[] = [
   {
     stop: "01",
     company: "DELHI WEB MASTER",
-    role: "FRONTEND WEB DEVELOPER",
+    role: "JR. WEB DEVELOPER",
     period: "AUG 2020 — DEC 2021",
     description:
-      "Built and launched 20+ responsive websites and online stores, and created reusable design systems and component libraries.",
+      "Built responsive, cross-browser websites with HTML, CSS, JavaScript and Bootstrap for 5+ clients.",
   },
   {
     stop: "02",
     company: "NEXGEN INNOVATORS",
-    role: "SENIOR FRONTEND ENGINEER",
-    period: "DEC 2021 — PRESENT",
+    role: "FRONTEND DEVELOPER",
+    period: "DEC 2021 — JAN 2025",
     description:
-      "Leading frontend development for enterprise client applications, built with Next.js 15, React 19, and modern APIs.",
+      "Built reusable React component libraries, a headless WooCommerce store (HL Giggs), and a custom WordPress theme for kcsshop.in.",
+  },
+  {
+    stop: "03",
+    company: "NEXGEN INNOVATORS",
+    role: "FULL STACK DEVELOPER",
+    period: "FEB 2025 — PRESENT",
+    description:
+      "Building AI lead-capture flows with WhatsApp chatbots, n8n, and ElevenLabs voice agents, and rebuilding client sites in Next.js.",
   },
 ];

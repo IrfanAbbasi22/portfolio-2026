@@ -31,13 +31,15 @@ export default function ProjectCard({ project }: { project: Project }) {
               {project.category}
             </span>
           </div>
-          <div
-            className={`w-7 h-7 rounded-full border border-navy/30 flex items-center justify-center font-mono text-xs font-bold text-navy transition-colors duration-300 ${
-              hasLink ? "group-hover:bg-navy group-hover:text-cream" : ""
-            }`}
-          >
-            {project.year}
-          </div>
+          {project.year && (
+            <div
+              className={`w-7 h-7 rounded-full border border-navy/30 flex items-center justify-center font-mono text-xs font-bold text-navy transition-colors duration-300 ${
+                hasLink ? "group-hover:bg-navy group-hover:text-cream" : ""
+              }`}
+            >
+              {project.year}
+            </div>
+          )}
         </div>
         <div className="overflow-hidden rounded-xl">
           <div

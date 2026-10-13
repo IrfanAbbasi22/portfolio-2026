@@ -21,8 +21,8 @@ export default function CareerJourney() {
             THE JOURNEY
           </h2>
           <p className="font-who-body-sm text-who-body-sm text-navy/60 mt-who-space-sm">
-            From building foundational websites to leading frontend
-            development for enterprise clients.
+            From building foundational websites to full stack development
+            and AI-powered lead automation for client products.
           </p>
         </div>
         {/* Right Content: career stops laid out as a map-pin route */}

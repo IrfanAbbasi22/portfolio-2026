@@ -16,12 +16,11 @@ export default function CTABanner() {
               </span>
             </div>
             <h2 className="font-who-headline-lg text-who-headline-lg-mobile md:text-who-headline-lg text-cream uppercase tracking-tight">
-              LOOKING FOR A DEDICATED FRONTEND DEVELOPER?
+              LOOKING FOR A DEDICATED FULL STACK DEVELOPER?
             </h2>
             <p className="font-who-body-md text-who-body-md text-cream/70 max-w-xl">
-              Available for senior consulting, technical advisory, or
-              engineering leadership roles — focused on React, Next.js, and
-              AI-powered frontend products.
+              Open to full-time Full Stack roles in Delhi NCR — focused on
+              React, Next.js, Node.js/Laravel, and AI integrations.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-who-space-md">
@@ -44,7 +43,7 @@ export default function CTABanner() {
               strengthText={15}
               sizeClassName="rounded-full px-who-space-lg py-who-space-md"
               textClassName="font-who-label-interactive text-who-label-interactive uppercase tracking-wider inline-flex items-center gap-who-space-xs"
-              href="/Mohd_Irfan_CV.pdf"
+              href="/mohd-irfan.pdf"
               download
             >
               <span className="material-symbols-outlined text-[18px]">download</span>

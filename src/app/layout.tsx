@@ -8,9 +8,19 @@ import PageTransitionProvider from "@/components/transitions/PageTransitionProvi
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mohd Irfan — Senior Frontend Engineer",
+  title: "Mohd Irfan | Full Stack Developer",
   description:
-    "Portfolio of Mohd Irfan, a senior frontend developer specializing in reliable web apps, online stores, and AI-powered interfaces.",
+    "Full Stack Developer with 5+ years building web apps in React, Next.js and TypeScript, with backend and AI integration work using Node.js, Laravel, n8n and third-party APIs.",
+  openGraph: {
+    title: "Mohd Irfan | Full Stack Developer",
+    description:
+      "Full Stack Developer with 5+ years building web apps in React, Next.js and TypeScript, with backend and AI integration work using Node.js, Laravel, n8n and third-party APIs.",
+  },
+  twitter: {
+    title: "Mohd Irfan | Full Stack Developer",
+    description:
+      "Full Stack Developer with 5+ years building web apps in React, Next.js and TypeScript, with backend and AI integration work using Node.js, Laravel, n8n and third-party APIs.",
+  },
 };
 
 export default function RootLayout({

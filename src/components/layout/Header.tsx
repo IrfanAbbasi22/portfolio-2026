@@ -45,7 +45,7 @@ export default function Header() {
             ))}
             <MagneticLink
               strength={18}
-              href="/Mohd_Irfan_CV.pdf"
+              href="/mohd-irfan.pdf"
               download
               className="ml-2 flex items-center rounded-full border border-navy px-3 py-1.5 text-xs hover:bg-teal hover:border-teal hover:text-cream transition-colors"
               textClassName="inline-flex items-center gap-1.5"

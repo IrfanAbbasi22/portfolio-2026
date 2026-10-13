@@ -9,28 +9,26 @@ export type Service = {
 export const services: Service[] = [
   {
     number: "01.",
-    title: "BRAND IDENTITY & DESIGN SYSTEMS",
-    tagline:
-      "Design systems that capture who you are, consistently, on every screen.",
+    title: "FULL STACK WEB APPS",
+    tagline: "React and Next.js frontends backed by Node.js or Laravel.",
     description:
-      "A design system is more than a Figma file — it's what keeps a product looking and feeling consistent at every screen size. I build fluid typography, accessible components (WCAG 2.1 AA), and design tokens wired directly into the codebase.",
-    ctaLabel: "EXPLORE DESIGN SYSTEMS →",
-  },
-  {
-    number: "02.",
-    title: "HIGH-SCALE WEB & NEXT.JS",
-    tagline:
-      "Interfaces engineered for people who use them, not just look at them.",
-    description:
-      "Modern web apps built with Next.js and headless Shopify, fast to load and reliable to use. Faster, smoother interactions mean better conversion and better search rankings.",
+      "End-to-end web apps: React and Next.js on the frontend, Node.js or Laravel on the backend, wired together with clean, well-structured code.",
     ctaLabel: "EXPLORE WEB DEVELOPMENT →",
   },
   {
-    number: "03.",
-    title: "AI INTEGRATIONS & AUTOMATION",
-    tagline: "When interface and intelligence work together seamlessly.",
+    number: "02.",
+    title: "APIS & INTEGRATIONS",
+    tagline: "REST and GraphQL APIs, CRM sync, Shopify and WordPress.",
     description:
-      "Real-time AI voice agents, live AI chat interfaces, and automated workflows that sync data between your tools — replacing clunky forms with smart, automatic systems.",
-    ctaLabel: "EXPLORE AI INTEGRATIONS →",
+      "Connecting apps to third-party APIs and CRMs, with REST and GraphQL integrations, Shopify and WordPress platforms, and CRM sync with tools like LeadSquared.",
+    ctaLabel: "EXPLORE INTEGRATIONS →",
+  },
+  {
+    number: "03.",
+    title: "AI AUTOMATION",
+    tagline: "WhatsApp chatbots, voice agents, and n8n workflows.",
+    description:
+      "WhatsApp chatbot flows, ElevenLabs voice agents, and n8n automation that qualifies and routes leads without manual work.",
+    ctaLabel: "EXPLORE AI AUTOMATION →",
   },
 ];
